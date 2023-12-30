@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: block;
+        }
+        .spiner{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 25px solid white;
+            border-top: 20px solid indigo;
+            animation: ani 2.5s linear infinite;
+            
+            
+        }
+        @keyframes ani{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .Ro{
+            background-color: gold;
+            height: 200px;
+            width: 200px;
+            border-radius:  50%;
+            border: 25px solid white;
+            border-top: 20px solid black;
+            animation: ani 2.5s linear infinite;
+            
+        }
+        @keyframes ani{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .round{
+            background-color: rgb(4, 0, 255);
+            height: 200px;
+            width: 200px;
+            border-radius:  50%;
+            border: 25px solid white;
+            border-top: 20px solid rgb(4, 255, 0);
+            animation: ani 2.5s linear infinite;
+            
+        }
+        @keyframes ani{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="spiner"> </div>
+    <div class="Ro"></div>
+    <div class="round"></div>
+    </div>
+    
+</body>
+</html>
