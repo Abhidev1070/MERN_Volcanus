@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Website</title>
+    <!-- <link rel="stylesheet"href="style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background : rgba(0,0,0,0.6) url("road_1_pic.jpg") center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+.container{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container h1{
+    color:white;
+    font-weight: 700;
+    font-size: 40px;
+    cursor: pointer;
+}
+.navber ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+.navber ul li a{
+    padding: 9px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+}
+.navber ul li a:hover{
+    background-color: chartreuse;
+}
+.content{
+    position: absolute;
+    color: white;
+    margin-top: 12%;
+    margin-left: 15%;
+}
+.content h1{
+    font-size: 50px;
+}
+.search{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 15%;
+}
+.search input{
+    padding:20px;
+    width: 500px;
+    border: 0;
+    outline:none;
+}
+.Submit{
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 28%;
+
+}
+.Submit a{
+    padding: 17px 24px;
+    color:#fff;
+    background-color: red;
+    text-decoration: none;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>BIKE <br>YARD</h1>
+        <div class="navber">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BIKES</a></li>
+                <li><a href="#">COLLECTION</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1>PURCHASE ANY BIKE <br> YOU WANT </h1>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Enter your Dream Bike">
+    </div>
+    <div class="Submit">
+        <a href="#">Submit</a>
+    </div>
+    
+</body>
+</html>

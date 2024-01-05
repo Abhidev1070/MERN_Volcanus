@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+body{
+    background:rgba(0,0,0,0.6) url('Bike_Ro_1.jpeg') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+.container{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container h1{
+    color:white;
+    font-weight: 700;
+    font-size: 40px;
+    cursor: pointer;
+}
+.navber ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+.navber ul li a{
+    padding: 9px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+
+
+}
+.navber ul li a:hover{
+    background-color: chartreuse;
+
+}
+.content{
+    position: absolute;
+    color: white;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+.content h1{
+    font-size: 50px;
+
+}
+.search{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 15%;
+
+}
+.search input{
+    padding:20px;
+    width: 500px;
+    border: 0;
+    outline:none;
+}
+.Submit{
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 28%;
+
+}
+.Submit a{
+    padding: 17px 24px;
+    color:#fff;
+    background-color: red;
+    text-decoration: none;
+
+}
