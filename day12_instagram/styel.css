@@ -13,6 +13,7 @@ body{
 .side_bar{
     height: 95vh;
     width: 20%;
+    display: flex;
     /* background-color: blueviolet; */
 }
 .side_menu{
@@ -26,6 +27,11 @@ body{
 }
 .fa-solid{
     margin-right: 10px;
+}
+.border_right{
+    height: 100vh;
+    border: 1px solid white;
+
 }
 .img{
     display: flex;
@@ -48,6 +54,7 @@ body{
 }
 .post_section{
     width: 50%;
+    margin-top: 30px;
 }
 .suggestion{
     width: 20%;
@@ -59,7 +66,7 @@ body{
 p{
     display: inline-block;
 }
-.image_add{
+.post_sectionimage_add{
     height: 50px;
     width: 50px;
     display: contents;
@@ -75,12 +82,35 @@ p{
     width: 50px;
     border-radius: 100%;
 }
+
 .person{
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 12px;
+    margin-top: 8px;
+    
 }
+.brand_img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+
+}
+.post{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+
+}
+.add_image{
+    height: 300px;
+    width: 300px;
+
+}
+
 .suggest_person{
     
     display: flex;
