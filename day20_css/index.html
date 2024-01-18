@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav_bar{
+            background-color: chartreuse;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .home{
+            width: 20%;
+            height: 80%;
+            background-color: burlywood;
+        }
+        .a{
+            width: 20%;
+            height: 80%;
+            display: none;
+            background-color: blueviolet;
+
+        }
+        
+        .project:hover .a{
+            display: block;
+
+        }
+
+
+        .contact{
+            width: 20%;
+            height: 80%;
+            background-color: rgb(13, 33, 214);
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <div class="home"><p>Home</p></div>
+        <div class="project">
+            <p>project</p>
+            <div class="abhi a">abhi</div>
+            <div class="ram a">ram</div>
+            <div class="kalu a">kalu</div>
+
+        </div>
+        <div class="contact"><p>contact</p></div>
+    </div>
+    
+    
+</body>
+</html>
