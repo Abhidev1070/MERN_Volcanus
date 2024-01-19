@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quert</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .box_items{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px ;
+        }
+        @media only screen and (max-width: 700px){
+            body{
+                background-color: darkorchid;
+            }
+            .box{
+                flex-direction: column;
+            }
+        }
+        @media only screen and (max-width: 400px){
+            body{
+                background-color: rgb(167, 219, 236);
+            }
+            .box{
+                flex-direction: column;
+            }
+            .box_items{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        
+    </div>
+    
+</body>
+</html>
