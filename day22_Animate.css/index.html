@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate.css</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    div{
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; */
+    }
+    h1{
+        background-color: chartreuse;
+        color: black;
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        perspective: 200px;
+
+    }
+    .img img{
+        width: 500px;
+        height: 500px;
+        /* transform:translate(500px 500px); */
+        /* transform: rotate(180deg); */
+        transform: scale(0.2);
+       
+
+    }
+    .img img:hover{
+        transform: rotate(180deg);
+        transition: 10s ease;
+        border: 10px solid yellow;
+
+
+    }
+
+  </style>
+</head>
+<body>
+    <!-- <div>
+    <h1 class="animate__animated animate__flip animate__infinite">An animated element</h1>
+</div> -->
+<div class="img">
+    <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg" alt="">
+</div>
+</body>
+</html>
