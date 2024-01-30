@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center; */
+        }
+        h1{
+            background-color: yellow;
+            padding: 20px;
+            height: 300px;
+            width: 300px;
+            /* display: inline; */
+            display: inline-block;
+
+        }
+        span{
+            background-color: chartreuse;
+            padding: 20px;
+            height: 300opx;
+            display: block;
+        }
+        .box1{
+            height: 120px;
+            width: 200px;
+            background-color: blueviolet;
+
+        }
+        .box2{
+            height: 120px;
+            width: 200px;
+            background-color: cornflowerblue;
+            
+        }
+        .box3{
+            height: 120px;
+            width: 200px;
+            background-color: blue;
+            
+        }
+        .nav{
+            background-color: cornflowerblue;
+            /* background-image: url(https://cdn.pixabay.com/photo/2024/01/18/14/46/train-8517089_1280.jpg); */
+        }
+        .box{
+            display: inline-block;
+            padding: 20px;
+        }
+        .box:hover{
+            background-color: rgb(33, 49, 50);
+            background-image: url(https://cdn.pixabay.com/photo/2024/01/18/14/46/train-8517089_1280.jpg);
+            /* position: fixed; */
+
+
+        }
+        .item1{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+          
+
+        }
+        .item2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(145, 33, 121);
+            display: none;
+          
+
+        }
+        .item1:hover .item2{
+            display:block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Abhishek</h1>
+    <span>Abhishek</span> -->
+    <!-- <div class="box1">Abhishek </div>
+    <div class="box2">Abhishek</div>
+    <div class="box3">Abhishek</div> -->
+    <div class="nav">
+        <div class="box">Home</div>
+        <div class="box">About</div>
+        <div class="box">Contact us</div>
+        <div class="box">Career</div>
+    </div>
+    <div class="item1">Thor <div class="item2">Thor</div></div>
+    
+    
+</body>
+</html>
