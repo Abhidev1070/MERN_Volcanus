@@ -7,6 +7,15 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .card-img-top:hover{
+                /* width: 50px; */
+                transform:scale(0.8) ;
+                
+            
+            
+            }
+        </style>
 
 
 </head>
@@ -134,6 +143,7 @@
                 <img src="https://cdn.pixabay.com/photo/2024/01/05/16/04/rocks-8489732_1280.jpg" class="card-img-top" alt="...
                 " style="border-radius: 10px; border: 2px solid yellow;">
             </div>
+            
             <div class="card-body text-light text-center">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -171,6 +181,27 @@
             })
         }
     </script>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner" style="width: auto; height: 400px; padding: auto;">
+          <div class="carousel-item active">
+            <img src="https://cdn.pixabay.com/photo/2020/09/02/21/08/sunset-5539565_1280.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2023/09/16/18/18/wallpaper-8257343_1280.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2019/06/19/16/17/fantasy-4285275_1280.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </body>
 
 </html>
