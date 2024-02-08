@@ -68,17 +68,21 @@
 
 
 
-function print(){
-    console.log("this is function body");
-}
-print();
+// function print(){
+//     console.log("this is function body");
+// }
+// print();
 
 
-////
+// ////
 
-function pi(){
-    return 3.14
-}
-// console.log(pi());
-const Abhi = pi();
-console.log(Abhi);
+// function pi(){
+//     return 3.14
+// }
+// // console.log(pi());
+// const Abhi = pi();
+// console.log(Abhi);
+
+// if (10 == 10){
+//     console.log("");
+// }https://codedamn.com/my-courses
