@@ -36,20 +36,20 @@
 
 //   ~~~~~~~~~~~~Objects~~~~~~~~~~~
 
-const laptop1 = {
-    mopel_name:" Hp probook 830 G8" ,
-    brand_name:"Hp",
-    ram:"10GB",
-    HHD:"500GB",
-    SSD:"300GB",
-    processor:"intel i-9 9th Gen",
-    price:75000
+// const laptop1 = {
+//     mopel_name:" Hp probook 830 G8" ,
+//     brand_name:"Hp",
+//     ram:"10GB",
+//     HHD:"500GB",
+//     SSD:"300GB",
+//     processor:"intel i-9 9th Gen",
+//     price:75000
 
-}
-console.log(" laptop1  object ", laptop1);
+// }
+// console.log(" laptop1  object ", laptop1);
 
-const { ram, SSD} = laptop1
-console.log(ram,SSD);
+// const { ram, SSD} = laptop1
+// console.log(ram,SSD);
 
 // const laptop2 = { ...laptop1,price:100000}
 
