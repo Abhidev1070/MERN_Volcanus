@@ -43,8 +43,10 @@
 //     console.log(person[i]);
 // }
 
-const arr = [10, 20, "Abhi", "suparman", 1254.1254]
-arr.forEach((value, index,Array) => console.log(value, index,Array));
+// const arr = [10, 20, "Abhi", "suparman", 1254.1254]
+// arr.forEach((value, index,Array) => console.log(value, index,Array));
+
+
 
 
 
