@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn1">SetTimeout</button>
+    <button id="btn2">setInterval</button>
+    <h1 class="time"></h1>
+
+
+    <script>
+        document.querySelector("#btn1").
+        addEventListener( "click",()=>{
+            setTimeout(() => {
+            document.querySelector('.time').
+            innerHTML='This is our setTimeout function'
+            // localStorage.getItem('Hero')
+            
+        },2000);
+
+        });
+
+
+        document.querySelector("#btn2").
+        addEventListener( "click",()=>{
+            setInterval(() => {
+                const time =new Date();
+            document.querySelector('.time').
+            innerHTML=`${time.toLocaleTimeString()}`
+            
+        },1000);
+
+        });
+        const item = {
+            brandName: 'iphone',
+            price : '100000',
+            modal : 'iphone5'
+
+        }
+        localStorage.setItem('phone',item);
+        localStorage.setItem('hero');
+        console.log(localStorage.getItem('Hero'));
+
+
+
+    </script>
+    
+</body>
+</html>

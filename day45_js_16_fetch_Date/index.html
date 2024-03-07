@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+    <style>
+        body{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="fetch"></div>
+
+
+    <script>
+        const fetchDataUsingPromise = ()=>{
+            return new Promise((resolve,reject)=>{
+                fetch("https://jsonplaceholder.typicode.com/todos").then((res)=>{
+                    if(!res.ok){
+                        // throw new Error (`Internl server Error ${Res.status}`)
+                        reject("The error occure")
+
+                    }
+                    resolve(res.json())
+                }).catch((err)=>{
+                    // throw new Error (`Data is not available ${err.message}`);
+                    reject("The error occure")
+                });
+            });
+        };
+        fetchDataUsingPromise()
+        .then((data) =>console.log( "this is error",data))
+        .catch((err)=>console.error(err)
+
+        )
+            </script>
+    
+</body>
+</html>
