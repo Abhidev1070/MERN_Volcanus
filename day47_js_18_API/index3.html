@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+    </div>
+
+
+    <script>
+    const fetchMealData = async () => {
+        const API = await fetch("https://http.dog/100.jpg");
+        const data = await API.json();
+        console.log(data)
+        // return data;
+
+    };
+    fetchMealData();
+    const showDataDOM = async()=>{
+        const data = await fetchMealData();
+        document.querySelector('').innerHTML=
+        `
+        <div>${data}</div>
+        `
+    }
+    showDataDOM();
+
+    </script>
+    
+</body>
+</html>

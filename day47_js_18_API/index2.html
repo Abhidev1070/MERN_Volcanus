@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="main">
+
+    </div>
+    <script>
+        const fetchMealData = async () => {
+            const API = await fetch("https://api.chucknorris.io/jokes/random?category=travel");
+            const data = await API.json();
+            console.log(data)
+            return data;
+
+        };
+        fetchMealData();
+        const showDataDOM = async () => {
+            const data = await fetchMealData();
+
+            document.querySelector('.main').innerHTML =
+                `
+        <div>
+         
+            <h1>${data.value}</h1>
+            <br>
+            <h2>${data.id}</h2>
+            <br>
+            <div>${data.created_at}</div>
+            <br>
+            <div>${data.categories}</div>
+            <br>
+
+            <img src="${data.url}" alt="url">
+            </ div>
+            
+        `
+
+            
+        };
+
+        showDataDOM();
+
+
+
+
+    </script>
+
+</body>
+
+</html>
