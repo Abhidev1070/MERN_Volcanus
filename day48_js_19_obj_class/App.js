@@ -24,21 +24,39 @@
 // console.log(user.getUserDetails());
 // // console.log(this);
 
-function User(username,loginCount,isLoggedIn){
-    this.username=username;
-    this.loginCount=loginCount;
-    this.isLoggedIn=isLoggedIn;
+// function User(username,loginCount,isLoggedIn){
+//     this.username=username;
+//     this.loginCount=loginCount;
+//     this.isLoggedIn=isLoggedIn;
 
-    // return this 
-}
+//     // return this 
+// }
 
-const userOne = new User("Abhi",12,true);
-const userTwo = new User("ram",19,false);
+// const userOne = new User("Abhi",12,true);
+// const userTwo = new User("ram",19,false);
 
-console.log(userOne);
-console.log(userTwo);
+// console.log(userOne);
+// console.log(userTwo);
 
 
+console.log("hello console");
+ const day = 1;
+ switch(day){
+    case 1 : console.log("Monday");
+    break;
+    case 2 : console.log("Tuesday");
+    break;
+    case 3 : console.log("wedday");
+    break;
+    case 4 : console.log("thurday");
+    break;
+    case 5 : console.log("friday");
+    break;
+    case 6 : console.log("saturday");
+    break;
+    case 7 : console.log("sunday");
+    break;
+ }
 
 
 
