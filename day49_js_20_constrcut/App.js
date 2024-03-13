@@ -44,28 +44,38 @@
 // console.log(p2);
 
 
-class car {
-constructor ( brandName,price,color){
-    this.brandName = brandName
-    this.price=price
-    this.color=color
-}
-display(){
-    console.log(` The Car Brand Name = ${this.brandName} and price-= ${this.price} and color = ${this.color}`);
-}
-}
-class BMW  extends car{
-    constructor(wheels,power,brandName,price,color){
-        super(brandName,price,color)
-        this.wheels =wheels;
-        this.power =power;
-    }
-    display(){
-        console.log(` The Car Brand Name = ${this.brandName} and price-= ${this.price} and color = ${this.color} wheels = ${this.wheels} power = ${this.power}`);
-    }
+// class car {
+// constructor ( brandName,price,color){
+//     this.brandName = brandName
+//     this.price=price
+//     this.color=color
+// }
+// display(){
+//     console.log(` The Car Brand Name = ${this.brandName} and price-= ${this.price} and color = ${this.color}`);
+// }
+// }
+// class BMW  extends car{
+//     constructor(wheels,power,brandName,price,color){
+//         super(brandName,price,color)
+//         this.wheels =wheels;
+//         this.power =power;
+//     }
+//     display(){
+//         console.log(` The Car Brand Name = ${this.brandName} and price-= ${this.price} and color = ${this.color} wheels = ${this.wheels} power = ${this.power}`);
+//     }
 
-}
-// const c1 = new car ("BMW",85974623,"Blue")
-// c1.display()
-const c2 = new BMW ("wheels","power", "BMW",85974623,"Blue");
-c2.display()
+// }
+// // const c1 = new car ("BMW",85974623,"Blue")
+// // c1.display()
+// const c2 = new BMW ("wheels","power", "BMW",85974623,"Blue");
+// c2.display()
+
+ /*const  x = 12 ;
+// const x = 12;
+const y = 25;
+const z = x+y;
+console.log(z);*/
+
+
+
+
