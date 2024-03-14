@@ -77,5 +77,59 @@ const z = x+y;
 console.log(z);*/
 
 
+// const hero1={
+//     name:"Suparman",
+//     age:20,
+//     salary:450000,
+//     gmail:"Suparman@gmail.com"
+// }
+// console.log(hero1);
+///spread Operator [ coping property from any other]
+// const hero2={...hero1,name:"Abhishek",universe:"marvel"};
+// console.log(hero2);
+
+// const arr1 =[10,20,30]
+// const arr2 =[...arr1,40,50,60,]
+// console.log(arr2);
+
+// const hero={
+//     name:"Suparman",
+//     age:20,
+//     salary:450000,
+//     gmail:"Suparman@gmail.com",
+//     post:"MERN Developer"
+// }
+// const {name,age,gmail}= hero
+// console.log(name,age,gmail);
+
+/// loops - for, while,do-while
+
+// const name = "suprman"
+// let num=50;
+// for ( let i=10;i<=num;i++){
+//     if(i%2=== 0){
+//         console.log("even",i);
+//     }
+//     else{
+//         console.log("odd",i);
+//     }
+// }
+let num = 20;
+for(let i=0;i<20; i++){
+    if (num%i===0){
+        console.log(" prime number",i);
+    }
+    else{
+        console.log("not primNumber",i);
+    }
+}
+
+
+
+
+
+
+
+
 
 
