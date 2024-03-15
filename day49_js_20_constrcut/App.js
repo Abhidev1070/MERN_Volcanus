@@ -114,15 +114,83 @@ console.log(z);*/
 //         console.log("odd",i);
 //     }
 // }
-let num = 20;
-for(let i=0;i<20; i++){
-    if (num%i===0){
-        console.log(" prime number",i);
+// let num = 20;
+// for(let i=0;i<20; i++){
+//     if (num%i===0){
+//         console.log(" prime number",i);
+//     }
+//     else{
+//         console.log("not primNumber",i);
+//     }
+// }
+/// for ---> number of Iteration know 
+/// while ---> Number of Iteration Unknow 
+/// do - while ->> Atleast Run Once 
+//// For In -->Key Value {Object}
+///for Of ->> TO Iterate the array 
+///For  each--> Element, index ,Array
+
+// let  number = 10;
+// let  sum = 0;
+// while(number !==0){
+//     sum+=number ;
+//     number--
+// }
+// console.log("sum is = ",sum);
+
+
+// let  num = 496440;
+// let sum = 0;
+// while(n!==0){
+//     let remider = num%0;
+//     console.log('remider at this point', remider);
+//     sum+=remider;
+//     console.log("sum",sum);
+//     n = Math.floor(n/10)
+        
+//     }
+    // console.log("sum is = ",sum);
+
+    // let age = 15;
+    // do {
+    //     console.log("User are eligible for voter Id ")
+    //     age --;
+    // }while(age>20)
+
+    //for in 
+
+    // const hero = {
+    //     name:"Abhishek ",
+    //     age:50,
+    //     salary:245852,
+
+    // }
+    // for(let key in hero){
+    //     console.log(key,hero[key]);
+    // }
+
+    ///for of
+    // const arr = ["Apple","Orange",230,40,21.2344];
+    // for(let val of arr){
+    //     console.log(val);
+    // }
+
+    let arr = [10,20,30,40,"Apple","Orange","Banana",2345.45]
+    // console.log(arr[4]);
+    arr.push("abhi")
+    for(let i=0;i<arr.length;i++){
+        console.log(arr[i]);
     }
-    else{
-        console.log("not primNumber",i);
-    }
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
