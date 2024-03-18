@@ -1,8 +1,18 @@
-const App =()=>{
+import React from 'react'
+import Hero from './Hero'
+import Laptop from './laptop'
+
+
+const App = () => {
   return (
-    <div>
-      <h1>Hello React </h1>
-    </div>
-  );
+   <>
+   <Hero/>
+   <Laptop/>
+   
+   </>
+    
+  )
+  
 }
+
 export default App

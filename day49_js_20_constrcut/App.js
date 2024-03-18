@@ -175,12 +175,12 @@ console.log(z);*/
     //     console.log(val);
     // }
 
-    let arr = [10,20,30,40,"Apple","Orange","Banana",2345.45]
-    // console.log(arr[4]);
-    arr.push("abhi")
-    for(let i=0;i<arr.length;i++){
-        console.log(arr[i]);
-    }
+    // let arr = [10,20,30,40,"Apple","Orange","Banana",2345.45]
+    // // console.log(arr[4]);
+    // arr.push("abhi")
+    // for(let i=0;i<arr.length;i++){
+    //     console.log(arr[i]);
+    // }
 
 
 
