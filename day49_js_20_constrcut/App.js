@@ -182,6 +182,24 @@ console.log(z);*/
     //     console.log(arr[i]);
     // }
 
+    // const student ={
+    //     name:"Prashant",
+    //     roll:1334,
+    //     gmail:"Prashant@gmail.com",
+    //     couese:'MERN',
+    // }
+    // console.log(student.name);
+
+    const phone = ["iphon","oneplus","samsung",'oppo',"vivo",]
+    // for(let item of phone){
+    //     console.log(item);
+    // }
+
+for(let kay in phone ){
+    console.log(phone[kay]);
+
+}
+
 
 
 
