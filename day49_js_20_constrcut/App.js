@@ -190,14 +190,21 @@ console.log(z);*/
     // }
     // console.log(student.name);
 
-    const phone = ["iphon","oneplus","samsung",'oppo',"vivo",]
+    // const phone = ["iphon","oneplus","samsung",'oppo',"vivo",]
     // for(let item of phone){
     //     console.log(item);
     // }
 
-for(let kay in phone ){
-    console.log(phone[kay]);
+// for(let kay in phone ){
+//     console.log(phone[kay]);
 
+// }
+for (var i=0;i<5;i++){
+    setTimeout(() => {
+        console.log(i);
+        
+    }, 2000);
+    console.log("hello");
 }
 
 

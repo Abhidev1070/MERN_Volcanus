@@ -1,13 +1,17 @@
 import React from 'react'
 import Hero from './Hero'
 import Laptop from './laptop'
+import Phone from './Phone'
+import marbal from './Marbal'
 
 
 const App = () => {
   return (
    <>
-   <Hero/>
+   {/* <Hero/>
    <Laptop/>
+   <Phone/> */}
+   <Marbal/>
    
    </>
     
