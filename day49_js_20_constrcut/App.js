@@ -70,7 +70,7 @@
 // const c2 = new BMW ("wheels","power", "BMW",85974623,"Blue");
 // c2.display()
 
- /*const  x = 12 ;
+/*const  x = 12 ;
 // const x = 12;
 const y = 25;
 const z = x+y;
@@ -147,66 +147,115 @@ console.log(z);*/
 //     sum+=remider;
 //     console.log("sum",sum);
 //     n = Math.floor(n/10)
-        
+
 //     }
-    // console.log("sum is = ",sum);
+// console.log("sum is = ",sum);
 
-    // let age = 15;
-    // do {
-    //     console.log("User are eligible for voter Id ")
-    //     age --;
-    // }while(age>20)
+// let age = 15;
+// do {
+//     console.log("User are eligible for voter Id ")
+//     age --;
+// }while(age>20)
 
-    //for in 
+//for in 
 
-    // const hero = {
-    //     name:"Abhishek ",
-    //     age:50,
-    //     salary:245852,
+// const hero = {
+//     name:"Abhishek ",
+//     age:50,
+//     salary:245852,
 
-    // }
-    // for(let key in hero){
-    //     console.log(key,hero[key]);
-    // }
+// }
+// for(let key in hero){
+//     console.log(key,hero[key]);
+// }
 
-    ///for of
-    // const arr = ["Apple","Orange",230,40,21.2344];
-    // for(let val of arr){
-    //     console.log(val);
-    // }
+///for of
+// const arr = ["Apple","Orange",230,40,21.2344];
+// for(let val of arr){
+//     console.log(val);
+// }
 
-    // let arr = [10,20,30,40,"Apple","Orange","Banana",2345.45]
-    // // console.log(arr[4]);
-    // arr.push("abhi")
-    // for(let i=0;i<arr.length;i++){
-    //     console.log(arr[i]);
-    // }
+// let arr = [10,20,30,40,"Apple","Orange","Banana",2345.45]
+// // console.log(arr[4]);
+// arr.push("abhi")
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
 
-    // const student ={
-    //     name:"Prashant",
-    //     roll:1334,
-    //     gmail:"Prashant@gmail.com",
-    //     couese:'MERN',
-    // }
-    // console.log(student.name);
+// const student ={
+//     name:"Prashant",
+//     roll:1334,
+//     gmail:"Prashant@gmail.com",
+//     couese:'MERN',
+// }
+// console.log(student.name);
 
-    // const phone = ["iphon","oneplus","samsung",'oppo',"vivo",]
-    // for(let item of phone){
-    //     console.log(item);
-    // }
+// const phone = ["iphon","oneplus","samsung",'oppo',"vivo",]
+// for(let item of phone){
+//     console.log(item);
+// }
 
 // for(let kay in phone ){
 //     console.log(phone[kay]);
 
 // }
-for (var i=0;i<5;i++){
-    setTimeout(() => {
-        console.log(i);
-        
-    }, 2000);
-    console.log("hello");
-}
+// let i;
 
+// 
+// function fun1(){
+//     let  a = 5;
+//     function fun2 (){
+//         console.log(a);
+//     }
+//      a =10;
+
+//     return fun2()
+// }
+// let data = fun1
+// data();
+
+// let a = [1,2,3,9,4,2]
+// let b = a.reduce((value,index,Array)=>{
+// console.log(value);
+
+
+// console.log(index);
+// return value + value;
+
+// })
+// console.log(b);
+
+// let num = [1,2,3,4,5]
+// for (const i in num){
+//     console.log(i);
+// }
+// for (var i=0;i<5;i++){
+//     setTimeout(()=>{
+//         // console.log(i);
+//     },2000)
+//     for (var i=0;i<5;i++){
+//         setTimeout(()=>{
+//             // console.log(i);
+//         },4000)
+//         // console.log(i);
+//     }
+//     console.log("hello");
+// }
+
+
+// console.log(i);
+
+
+// function Abhi() {
+//     return function firstName () {
+//         for (let i = 0; i < 5; i++) {
+//             console.log(i);
+//         }
+//     }
+//     firstName();
+// }
+// let a = Abhi();
+// a();
 
 
 
