@@ -19,7 +19,7 @@
 
 // const p = new Promise();
 
-// const data = new data ();e
+// const data = new data ();
 
 // function product (name,price,quentity){
 //    this. name =name ,
@@ -256,6 +256,24 @@ console.log(z);*/
 // }
 // let a = Abhi();
 // a();
+
+const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
+
+// for(let value of arr){
+//     console.log(value);
+// }
+// console.log(arr.shift());
+// console.log(arr.splice(2,1));
+// console.log(arr.slice(0,3));
+// console.log(arr.indexOf("iphon"));
+// console.log(arr.lastIndexOf("iphon"));
+// console.log(arr.includes("iphon"));
+// console.log(arr.sort());
+// console.log(arr.toString());
+
+
+
+
 
 
 
