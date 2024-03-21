@@ -257,7 +257,7 @@ console.log(z);*/
 // let a = Abhi();
 // a();
 
-const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
+// const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
 
 // for(let value of arr){
 //     console.log(value);
