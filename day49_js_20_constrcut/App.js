@@ -271,6 +271,23 @@ console.log(z);*/
 // console.log(arr.sort());
 // console.log(arr.toString());
 
+for (var i=0;i<5;i++){
+           function a(x){
+            setTimeout(()=>{
+                console.log(x);
+            },4000)
+           }
+           a(i)
+}
+console.log("hello");
+
+// console.log(a);
+
+// {
+//     let a =10;
+// console.log(a);
+
+// }
 
 
 

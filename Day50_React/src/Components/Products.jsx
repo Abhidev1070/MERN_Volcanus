@@ -6,12 +6,13 @@ const Products = () => {
   return (
 
     <>
-    
+
 
      <div
       className="row d-flex justify-content-center align-items-center"
       style={{ width: "67rem", margin: "auto" }}
     >
+        
       {products.map((item) => (
         <div className="col-md-4 my-3" key={item.id}>
           <div className="card bg-dark text-light" style={{ width: "18rem" }}>
