@@ -1,19 +1,18 @@
-import React, { useState } from 'react'
-import Products from './Products'
-import Navbar from './Navbar'
-import { items } from './Data'
+import React, { useState } from "react";
+import Products from "./Products";
+import Navbar from "./Navbar";
+import { items } from "./Data";
 
 const App = () => {
-  const [products, setproducts] = useState(items);
+  const [product, setproducts] = useState(items);
   return (
+
     <>
       <Navbar setproducts={setproducts} />
-      <Products products={products} />
-
+      <Products product={product} />
     </>
+    
+  );
+};
 
-
-  )
-}
-
-export default App
+export default App;

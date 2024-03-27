@@ -271,15 +271,15 @@ console.log(z);*/
 // console.log(arr.sort());
 // console.log(arr.toString());
 
-for (var i=0;i<5;i++){
-           function a(x){
-            setTimeout(()=>{
-                console.log(x);
-            },4000)
-           }
-           a(i)
-}
-console.log("hello");
+// for (var i=0;i<5;i++){
+//            function a(x){
+//             setTimeout(()=>{
+//                 console.log(x);
+//             },4000)
+//            }
+//            a(i)
+// }
+// console.log("hello");
 
 // console.log(a);
 
@@ -288,6 +288,64 @@ console.log("hello");
 // console.log(a);
 
 // }
+
+// const user = { 
+//     'name': 'Alex',
+//     'address': '15th Park Avenue',
+//     'age': 43,
+//     department:{
+//         'name': 'Sales',
+//         'Shift': 'Morning',
+        
+//     }
+// }
+
+// const { department: { address: { city } } } = user;
+
+// console.log( {department} = user.name);
+
+// for(let i=1;i<=3;i++){
+//     // console.log(i);
+//     for(let j=i;j<=3;j++){
+//         console.log("This is i ",i);
+//         // console.log("This is j",j);
+
+//     }
+// }
+
+
+// strings
+
+// const str = "SuparMan";
+// console.log( "Bafore upperCase =>",str);
+
+// console.log( "After upperCase =>",str.toUpperCase());
+// console.log( "After upperCase =>",str.toLowerCase());
+// const result =str.trim()
+// console.log(result);
+
+// console.log(str.length);
+
+// console.log(str.charAt(4));
+
+
+const str = "superman";
+let count =0;
+
+for(let i=0;i<str.length;i++){
+    let temp = str.charAt(i);
+    // let temp = str.charCodeAt(i)
+    // console.log(i);
+    if(temp==="a"||temp==='e'||temp==='i'||temp==='o'||temp==='u'){
+        console.log("Vowel",temp);
+        count++;
+    }
+    else{
+        console.log('consonet',temp);
+    }
+}
+
+
 
 
 
