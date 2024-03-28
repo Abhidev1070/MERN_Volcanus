@@ -8,6 +8,7 @@ const Navbar = ({ setproducts }) => {
     setproducts(filteredData);
   };
 
+  const filterByPrice =(p)=>setproducts(items.filter((data)=>data.price>=p));
   return (
     <>
       <div className="nav p-3 my-3 d-flex justify-content-center">
@@ -30,9 +31,9 @@ const Navbar = ({ setproducts }) => {
         >
           Tablets
         </div>
-        <div className="btn btn-info mx-3">{">"}30000</div>
-        <div className="btn btn-light mx-3">{">"}60000</div>
-        <div className="btn btn-danger mx-3">{">"}80000</div>
+        <div className="btn btn-info mx-3" onClick={()=>filterByPrice(30000)}>{">"}30000</div>
+        <div className="btn btn-light mx-3" onClick={()=>filterByPrice(60000)}>{">"}60000</div>
+        <div className="btn btn-danger mx-3" onClick={()=>filterByPrice(80000)}>{">"}80000</div>
       </div>
     </>
   );

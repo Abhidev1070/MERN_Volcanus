@@ -329,21 +329,21 @@ console.log(z);*/
 // console.log(str.charAt(4));
 
 
-const str = "superman";
-let count =0;
+// const str = "superman";
+// let count =0;
 
-for(let i=0;i<str.length;i++){
-    let temp = str.charAt(i);
-    // let temp = str.charCodeAt(i)
-    // console.log(i);
-    if(temp==="a"||temp==='e'||temp==='i'||temp==='o'||temp==='u'){
-        console.log("Vowel",temp);
-        count++;
-    }
-    else{
-        console.log('consonet',temp);
-    }
-}
+// for(let i=0;i<str.length;i++){
+//     let temp = str.charAt(i);
+//     // let temp = str.charCodeAt(i)
+//     // console.log(i);
+//     if(temp==="a"||temp==='e'||temp==='i'||temp==='o'||temp==='u'){
+//         console.log("Vowel",temp);
+//         count++;
+//     }
+//     else{
+//         console.log('consonet',temp);
+//     }
+// }
 
 
 
