@@ -345,6 +345,84 @@ console.log(z);*/
 //     }
 // }
 
+// let arr = [12,15,16,12,13,54,78,94] 
+// for (let a=0;a<5;a++){
+//     // console.log(a);
+//     for(let b=a;b<5;b++){
+//         console.log( a);
+//         // for (let c=b;c<5;c++){
+//         //     console.log(c);
+//         // }
+//     }
+// }
+
+// indexOf => to find a particuler charactre index
+
+// const str ="suparman";
+// const char ="s";
+// const index = str.indexOf(char);
+// console.log(`The index of ${char} = ${index}`)
+
+//replace => to replace a particular character in a string
+
+// const str = "Supar,  man "
+// const brastr = str.replace("U","u");
+// console.log("resulted string =",brastr);
+// const brastr = str.split(",");
+// console.log(brastr);
+// const brastr = str.slice(0,3);
+// console.log(brastr);
+
+// const str = "my name is superman"
+// for ( let i=0;i<5;i++){
+//     const upstr=(str.split(" ")[i].charAt(i).toUpperCase())
+// }
+// console.log(upstr);
+
+// const str = "@#$su#%$#@"
+// console.log(str.substring(3,5));
+
+// const isPanulindrome = (str)=>{
+//     let a="ABA"
+//     for( let i=0;i<str.length/2;i++){
+//         if(str[i]!==str[str.length-1-i]){
+//             console.log("is prelidrom",i);
+
+//         }
+//         else{
+//             console.log("is a not palidrom",i);
+//         }
+//     }
+// }
+
+const str = "121";
+let start =0;
+let end = str.length-1;
+let flag = true
+while (start<end){
+    if(str.charAt(start)!=str.charAt(end)){
+        flag=false
+        break;
+    }
+    start++;
+    end--;
+
+}
+if(flag){
+    console.log("pa");
+}
+else{
+    console.log('not p');
+}
+
+
+
+
+
+
+
+
+
 
 
 

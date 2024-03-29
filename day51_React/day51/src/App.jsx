@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 
 import { items } from "./Data";
 import  FormHandling from "./FormHandling";
+import Movies from "./Movies";
 
 
 const App = () => {
@@ -20,7 +21,8 @@ console.log("This is useEffect hook");
       <Navbar setproducts={setproducts} />
       {/* <Products product={product} /> */}
 
-      <FormHandling/>
+      {/* <FormHandling/> */}
+      <Movies/>
     </>
     
   );
