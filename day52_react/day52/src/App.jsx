@@ -10,6 +10,7 @@ const App = () => {
     { id: 2, title: 'Avegers Infinity war ', description: 'this is Batch vray Talented' }, ,
     { id: 3, title: ' Chennai Express', description: 'this is Batch vray Talented' },
   ]);
+  const [editdeta, seteditdeta] = useState([])
   // Add todo
 
   const addTodo = (title, description)=>{
@@ -18,12 +19,25 @@ const App = () => {
     setData([...data,obj])
 
   };
+  /// Delete todo 
+  const deleteTodo =(id)=>{
+    const filteredDeta = data.filter((d)=>d.id != id)
+    setData(filteredDeta)
+    console.log(filteredDeta);
+  };
+///Edit Todos
+
+// const editTodo =(id)=> seteditdeta(data.filter((d)=>d.id==id));
+ 
+ 
+
+
 
   return (
     <>
    
-    <Form addTodo={addTodo}/>
-      <Todos data={data} />
+    <Form addTodo={addTodo} data={data} editedData={editedData}/>
+      <Todos data={data}  setData={setData} deleteTodo={deleteTodo}/>
     
     </>
   )

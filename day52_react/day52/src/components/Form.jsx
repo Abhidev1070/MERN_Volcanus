@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
-const Form = ({addTodo}) => {
+const Form = ({addTodo ,editedData}) => {
   const [title,settitle]=useState("")
-  const [description,setdescription]=useState("")
+  const [description,setdescription]=useState("");
+  
+  useEffect (()=>{
+    settitle(editedData[0]?.title)
+    setdescription(editedData[0]?.description)
+  },[editedData])
+
+
+
+
   const onSubmitHandler=(e)=>{
     e.preventDefault();
     if(title==""||description ==""){
@@ -55,4 +64,4 @@ const Form = ({addTodo}) => {
   );
 };
 
-export default Form
+export defa

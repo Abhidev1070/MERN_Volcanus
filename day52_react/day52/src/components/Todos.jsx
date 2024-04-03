@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Todos = ({ data }) => {
+const Todos = ({ data,deleteTodo }) => {
     return (
 
         <>
@@ -13,19 +13,20 @@ const Todos = ({ data }) => {
                         <p>{d?.description}</p>
                         <div className='container'>
                             <button className='btn btn-warning mx-3'>Edit</button>
-                            <button className='btn btn-info mx-3'>Dalete</button>
+                            <button className='btn btn-info mx-3' onClick={()=>deleteTodo(d.id)}>Dalete</button>
                         </div>
 
                     </div>
                 )
 
-                )}
+                )};
 
             </div>
+            
 
 
         </>
-    )
-}
+    );
+};
 
 export default Todos
