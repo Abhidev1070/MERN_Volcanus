@@ -1,46 +1,74 @@
-import React, { useState } from 'react'
-import Form from'./components/Form'
-import Todos from './components/Todos'
-
-
+import React, { useState, useEffect } from "react";
+import Todos from "./components/Todos";
+import Form from "./components/Form";
 
 const App = () => {
-  const [data, setData] = useState([
-    { id: 1, title: 'MERN Batch -2 ', description: 'this is Batch vray Talented' },
-    { id: 2, title: 'Avegers Infinity war ', description: 'this is Batch vray Talented' }, ,
-    { id: 3, title: ' Chennai Express', description: 'this is Batch vray Talented' },
-  ]);
-  const [editdeta, seteditdeta] = useState([])
-  // Add todo
+  const [data, setData] = useState([]);
+ const [reload, setreload] = useState(false)
 
-  const addTodo = (title, description)=>{
-    const obj={ id: Math.random(), title, description, }
+  useEffect(() => {
+    if (reload) {
+      let jsonData = JSON.stringify(data);
+      localStorage.setItem("data", jsonData);
+      setreload(false)
+    }
+   
+  }, [data,reload]);
 
-    setData([...data,obj])
+  useEffect(() => {
+    const getDataFromLocalStorage = JSON.parse(localStorage.getItem("data"));
+    if (getDataFromLocalStorage) {
+      setData(getDataFromLocalStorage);
+    }
+  }, [])
+  
+
+  
+
+  const [id, setId] = useState("");
+
+  // Add Todo
+  const addTodo = (title, description) => {
+    const obj = {
+      id: Math.random(),
+      title,
+      description,
+    };
+    setData([...data, obj]);
+      setreload(true);
 
   };
-  /// Delete todo 
-  const deleteTodo =(id)=>{
-    const filteredDeta = data.filter((d)=>d.id != id)
-    setData(filteredDeta)
-    console.log(filteredDeta);
+
+  // Delete Todo
+  const deleteTodo = (id) => {
+    const filteredData = data.filter((d) => d.id != id);
+    setData(filteredData);
+    console.log(filteredData);
+      setreload(true);
+
   };
-///Edit Todos
-
-// const editTodo =(id)=> seteditdeta(data.filter((d)=>d.id==id));
- 
- 
-
-
-
   return (
     <>
-   
-    <Form addTodo={addTodo} data={data} editedData={editedData}/>
-      <Todos data={data}  setData={setData} deleteTodo={deleteTodo}/>
-    
+      {/* <button className="btn btn-primary" onClick={()=>editTodo(1)}>
+        Edit
+      </button> */}
+
+      <Form
+        addTodo={addTodo}
+        data={data}
+        setData={setData}
+        id={id}
+        setId={setId}
+        setreload={setreload}
+      />
+      <Todos
+        data={data}
+        setData={setData}
+        deleteTodo={deleteTodo}
+        setId={setId}
+      />
     </>
-  )
-}
+  );
+};
 
 export default App;
