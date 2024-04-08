@@ -67,6 +67,7 @@ const Form = ({ addTodo, id, setId, data, setData, setreload }) => {
               id="exampleInputPassword1"
               onChange={(e) => setDescription(e.target.value)}
               // required
+              
             />
           </div>
           <div className="mb-3 col-md-2">

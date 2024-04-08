@@ -296,7 +296,7 @@ console.log(z);*/
 //     department:{
 //         'name': 'Sales',
 //         'Shift': 'Morning',
-        
+
 //     }
 // }
 
@@ -395,27 +395,46 @@ console.log(z);*/
 //     }
 // }
 
-const str = "121";
-let start =0;
-let end = str.length-1;
-let flag = true
-while (start<end){
-    if(str.charAt(start)!=str.charAt(end)){
-        flag=false
-        break;
-    }
-    start++;
-    end--;
+// const str = "121";
+// let start =0;
+// let end = str.length-1;
+// let flag = true
+// while (start<end){
+//     if(str.charAt(start)!=str.charAt(end)){
+//         flag=false
+//         break;
+//     }
+//     start++;
+//     end--;
 
-}
-if(flag){
-    console.log("pa");
-}
-else{
-    console.log('not p');
-}
+// }
+// if(flag){
+//     console.log("pa");
+// }
+// else{
+//     console.log('not p');
+// }
 
+// let str = "abcdefghijklmnopqrstuvwxyz";
+// for (let i = 0; i < str.length; i++) {
+//     if (i % 2 === 0) {
+//         if (i % 4 === 0) {
+//             if (i % 6 === 0) {
+//                if(i%10===0){
+//                 console.log(i);
+//                }
+//             }
+//         }
+//     }
+// }
 
+// let a = 4>3>2;
+// console.log(a);
+
+const x=10;
+const y=8;
+const z=(x>y)?x:y;
+console.log(z);
 
 
 

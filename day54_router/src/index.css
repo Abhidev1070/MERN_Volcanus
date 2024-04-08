@@ -1,0 +1,38 @@
+
+body{
+  background-color: black;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+
+}
+.nav{
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.nav .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.nav .right .items{
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav .right .items:hover{
+  background-color: black;
+  cursor: pointer;
+}
+.footer{
+  background-color: cadetblue;
+  padding: 3PX;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

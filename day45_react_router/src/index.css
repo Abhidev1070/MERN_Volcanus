@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.Nav{
+  
+  background-color: chartreuse;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px;
+}
+.Nav .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.Nav .right .items{
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.Nav .right .items:hover{
+  background-color: black;
+  cursor: pointer;
+}
+

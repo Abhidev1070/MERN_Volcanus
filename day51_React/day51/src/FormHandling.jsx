@@ -27,7 +27,9 @@ const FormHandling = () => {
     <br /><br />
     passWord:- <input type="password" value={passWord}
     onChange={(e)=>setPassWord(e.target.value)} />
+    
     <br /><br />
+
     <button className='btn btn-warning'> Submit</button>
     
 
