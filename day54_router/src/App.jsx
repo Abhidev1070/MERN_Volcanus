@@ -6,6 +6,7 @@ import About from './pages/About'
 import Team from './pages/Team'
 import Narbar from './components/Narbar'
 import Footer from './components/Footer'
+import ProductDetails from './pages/ProductDetails'
 
 const App = () => {
   return (
@@ -14,10 +15,13 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/Contact' element={<Contact/>}/>
-      <Route path='/About' element={<About/>}/>
+      <Route path='/About/:id' element={<About/>}/>
       <Route path='/Team' element={<Team/>}/>
 
+      <Route path='/product/:id' element={<ProductDetails/>}/>
+
     </Routes>
+
     <Footer/>
 
    </Router>
