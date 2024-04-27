@@ -39,8 +39,8 @@ const fetchMealData = async ()=> {
 }
 // console.log(api);
 // console.log(fetchMealData());
-const showDataToDOM = async ()=>{
-    const data = await fetchMealData();
+// const showDataToDOM = async ()=>{
+//     const data = await fetchMealData();
     // console.log("This data is coming from meaIDB API ",data[0].strMeal);
 
 // document.querySelector(".main").innerHTML=`
@@ -49,15 +49,15 @@ const showDataToDOM = async ()=>{
 // <img src= ${data[0].strMealThumb}alt = ${data[0].strMeal}style="width:300px">
 // </div>
 // `
-document.querySelector('.main').innerHTML=data.map ((d)=>`
-<div>
- <h1>${data[0].strMeal}</h1>
- <img src= ${data[0].strMealThumb}alt = ${data[0].strMeal}style="width:300px">
-</div>
-`)
+// document.querySelector('.main').innerHTML=data.map ((d)=>`
+// <div>
+//  <h1>${data[0].strMeal}</h1>
+//  <img src= ${data[0].strMealThumb}alt = ${data[0].strMeal}style="width:300px">
+// </div>
+// `)
 
-}
-showDataToDOM();
+// }
+// showDataToDOM();
 
 
 

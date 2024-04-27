@@ -8,7 +8,8 @@ import Narbar from './components/Narbar'
 import Footer from './components/Footer'
 import ProductDetails from './pages/ProductDetails'
 
-const App = () => {
+
+const App = () => { 
   return (
    <Router>
     <Narbar/>
@@ -19,11 +20,8 @@ const App = () => {
       <Route path='/Team' element={<Team/>}/>
 
       <Route path='/product/:id' element={<ProductDetails/>}/>
-
     </Routes>
-
     <Footer/>
-
    </Router>
   )
 }
