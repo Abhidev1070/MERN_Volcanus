@@ -437,31 +437,50 @@ console.log(z);*/
 
 //binaryseach number 
 
-const binarySearch = (arr, target) => {
-    let s = 0;
-    let e = arr.length - 1;
-    let mid;
+// const binarySearch = (arr, target) => {
+//     let s = 0;
+//     let e = arr.length - 1;
+//     let mid;
+//     while (s <= e) {
+//         mid = Math.floor((s + e) / 2);
+//         if (arr[mid] == target) {
+//             return mid;
+//         }
+//         else if (arr[mid] > target) {
+//             e = mid - 1;
+//         }
+//         else if (arr[mid] < target) {
+//             s = mid + 1;
+//         }
+//     }
+//     return -1;
+// };
+// // main function
+// const arr = [10, 20, 30, 500, 750, 5000, 6954, 55500]
+// let target = 750;
+// const result = binarySearch(arr, target);
+// console.log(result);
+class Bank{
+    rateOfInterest = () => 0.01;
+}
+class PNB extends Bank{
+    rateOfInterest = () => 5;
+}
+class SBI extends Bank{
+    rateOfInterest = () => 4;
+}
+class HDFC extends Bank{
+    rateOfInterest = () =>6;
+}
+class ICICI extends Bank{
+    rateOfInterest = () =>7;
+}
 
+const obj1 =new ICICI();
+console.log(`Rate of interst of ICICI Bank = ${obj1.rateOfInterest()}%`);
+const obj2 =new SBI();
+console.log(`Rate of interst of SBI Bank = ${obj2.rateOfInterest()}%`);
 
-    while (s <= e) {
-        mid = Math.floor((s + e) / 2);
-        if (arr[mid] == target) {
-            return mid;
-        }
-        else if (arr[mid] > target) {
-            e = mid - 1;
-        }
-        else if (arr[mid] < target) {
-            s = mid + 1;
-        }
-    }
-    return -1;
-};
-// main function
-const arr = [10, 20, 30, 500, 750, 5000, 6954, 55500]
-let target = 750;
-const result = binarySearch(arr, target);
-console.log(result);
 
 
 
