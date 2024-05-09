@@ -460,26 +460,55 @@ console.log(z);*/
 // let target = 750;
 // const result = binarySearch(arr, target);
 // console.log(result);
-class Bank{
-    rateOfInterest = () => 0.01;
-}
-class PNB extends Bank{
-    rateOfInterest = () => 5;
-}
-class SBI extends Bank{
-    rateOfInterest = () => 4;
-}
-class HDFC extends Bank{
-    rateOfInterest = () =>6;
-}
-class ICICI extends Bank{
-    rateOfInterest = () =>7;
-}
+// class Bank{
+//     rateOfInterest = () => 0.01;
+// }
+// class PNB extends Bank{
+//     rateOfInterest = () => 5;
+// }
+// class SBI extends Bank{
+//     rateOfInterest = () => 4;
+// }
+// class HDFC extends Bank{
+//     rateOfInterest = () =>6;
+// }
+// class ICICI extends Bank{
+//     rateOfInterest = () =>7;
+// }
 
-const obj1 =new ICICI();
-console.log(`Rate of interst of ICICI Bank = ${obj1.rateOfInterest()}%`);
-const obj2 =new SBI();
-console.log(`Rate of interst of SBI Bank = ${obj2.rateOfInterest()}%`);
+// const obj1 =new ICICI();
+// console.log(`Rate of interst of ICICI Bank = ${obj1.rateOfInterest()}%`);
+// const obj2 =new SBI();
+// console.log(`Rate of interst of SBI Bank = ${obj2.rateOfInterest()}%`);
+
+
+// chatAt - to find a character in particular index of place
+
+// const str = "superman";
+// console.log("To find length ",str.length);
+
+// for(let i=0; i<str.length;i++){
+//     console.log(str.charAt(i));
+// }
+
+// Education
+
+// const str = "educATion";
+// for(let i=0; i<str.length;i++){
+//         if(str.charAt(i)=="a"||str.charAt(i)=="e"||str.charAt(i)=="i"||str.charAt(i)=="o"||str.charAt(i)=="u"){
+//             console.log("vovel",str.charAt(i));
+
+//         }
+//         else{
+//             console.log("consonet",str.charAt(i));
+//         }
+//     }
+
+// let str ="hello"
+// console.log(str.replace("h","H"));
+
+// const str = "The suparman is belong from DC"
+// console.log(str.split(' '));
 
 
 
