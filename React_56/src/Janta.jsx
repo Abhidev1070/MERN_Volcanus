@@ -8,5 +8,4 @@ const janta = ({name}) => {
     <div>janta={name}{data.name}</div>
   )
 }
-
 export default janta;
