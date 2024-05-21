@@ -41,5 +41,12 @@ app.put('/:id',(req,res)=>{
     res.json({massage:"your product has been updata",products})
 })
 
+app.delete('/:id',(req,res)=>{
+    const id = req.params.id;
+    // console.log(deleteDelete);
+    let newproduct = products.filter((data)=>data.id != id)
+    res.json({massage:" data to delete",newproduct})
+})
+
 const port = 1000;
 app.listen(port,()=>console.log(`server is runing on port ${port}`))
