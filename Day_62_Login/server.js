@@ -25,17 +25,17 @@ app.post('/login',(req,res)=>{
         if(user[i].password==password && user[i].email == email){
             res.redirect('/user')
         }
-        else{
-            res.redirect('/error')
-        }
+        // else{
+        //     res.redirect('/error')
+        // }
     }
 })
 
 app.get('/user',(req,res)=>{
     res.render('./user.ejs')
 })
-app.get('/user,',(req,res)=>{
-    res.send('error')
-})
+// app.get('/user,',(req,res)=>{
+//     res.send('error')
+// })
 
 app.listen(2000,()=>console.log(`server is running 0n oprot 2000`))

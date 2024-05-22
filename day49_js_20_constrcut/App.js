@@ -510,6 +510,32 @@ console.log(z);*/
 // const str = "The suparman is belong from DC"
 // console.log(str.split(' '));
 
+const removeSpecialChar = (str)=>{
+    let specialChar = [];
+    let Alphabet =[];
+    
+    for(let i=0; i<str.length; i++){
+        let char = str.charAt(i);
+        let ascii = char.charCodeAt(0);
+
+        if((ascii >= 65 && ascii <= 91) || (ascii >= 97 && ascii <= 123)){
+            Alphabet +=char;
+
+        }
+        else{
+            specialChar += char;
+        }
+
+    }
+    console.log( " a= ,",Alphabet);
+    console.log(specialChar);
+}
+
+removeSpecialChar();
+let str = "sd@g$g%vg^g%hy%h%^&U**&^%#";
+
+
+
 
 
 
