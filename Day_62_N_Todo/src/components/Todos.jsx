@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
-const Todos = ({todos}) => {
+const Todos = ({todos,deleteTodo}) => {
     
   return (
     <div className='container '>
-    {todos.map((e)=>(
-        <div key={e.id} className=' bg-success p-3 my-3 text-center con'>
-            <div>{e.name}</div>
-            <p>{e.age}</p>
-            <p>{e.Movie}</p>
+    {todos.map((todo)=>(
+        <div key={todo.id} className=' bg-success p-3 my-3 text-center con'>
+            <div>{todo.title}</div>
+            <p>{todo.description}</p>
+            <p>{todo.Movie}</p>
+
             <div>
                 <button className="btn btn-warning mx-2">Edit</button>
-                <button className="btn btn-danger mx-2">Delete</button>
+                <button className="btn btn-danger mx-2 m-2" onClick={()=>deleteTodo(todo.id)}>Delete</button>
             </div>
         </div>
 
@@ -19,6 +20,6 @@ const Todos = ({todos}) => {
 
     </div>
   )
-}
+};
 
 export default Todos
