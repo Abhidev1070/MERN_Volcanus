@@ -17,25 +17,47 @@ const App = () => {
         "A computer hacker learns about the true nature of reality and his role in the war against its controllers.",
     },
   ]);
+
+  const [id, setId] = useState("")
+
+  // add todo
   const addTodo = (id, title, desc) => {
+
     const obj = {
       id,
       title,
       description: desc,
     };
-    setTodos([...todos, obj]);
-  };
 
-  const deleteTodo = (id) =>{
-    // const filterTodo = todos.filter((item)=>item.id != id)
+    if(id != ""){
+      setTodos((prevdata)=>prevdata.map((item)=>(item.id==id)?{...item,...obj}:item))
+
+    }
+    else{
+      
+      setTodos([...todos, obj]);
+    }
+    setId("");
+  };
+  //delete todo
+
+const deleteTodo = (id) =>{
+  // const filterTodo = todos.filter((item)=>item.id != id)
+  if(confirm("Aer you delete")){
+
     setTodos(todos.filter((item)=>item.id != id))
   }
+}
+
+// Edit todo
+
+console.log("edit ke liye id aa gayi =",id);
 
   return (
     <>
-      <Form addTodo={addTodo} />
+      <Form addTodo={addTodo} todos={todos} id={id}/>
       <div>
-        <Todos todos={todos}  deleteTodo={deleteTodo}/>
+        <Todos todos={todos}  deleteTodo={deleteTodo} setId={setId}/>
       </div>
     </>
   );
