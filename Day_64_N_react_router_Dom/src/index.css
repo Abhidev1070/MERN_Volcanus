@@ -1,0 +1,26 @@
+
+body{
+  background-color: black;
+ color: #fff;
+}
+.nav_bar{
+  height: 50px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: rgb(228, 52, 255);
+}
+.nav_bar .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.right{
+  gap: 10px;
+}
+.right .item{
+  cursor: pointer;
+  font-weight: bold;
+}
