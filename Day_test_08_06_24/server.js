@@ -1,13 +1,13 @@
 import express from 'express'
 import mongoose from 'mongoose';
-import productRouter from './Routes/Product.js';
+import movieRouter from './Routes/Movie.js';
 import bodyParser from 'express'
 
  const app = express();
 
  app.use(bodyParser.json())
 
- app.use("/api/product",productRouter);
+ app.use("/api/movie",movieRouter);
 
 
  mongoose.connect(
@@ -17,7 +17,7 @@ import bodyParser from 'express'
     }
 ).then(()=>console.log("mongoose connect is successfully")).catch((err)=>console.log(err))
 
- const port =6000;
+ const port =7000;
 
  
  app.listen(port,()=>console.log(`server is run http://localhost:${port}`))

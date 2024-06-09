@@ -1,10 +1,10 @@
-import { Products } from "../Models/Products.js";
-export const addProduct =  async (req,res)=>{
+import { Movies } from "../Models/Movies.js";
+export const addMovies =  async (req,res)=>{
     const {title,acter,releoreData,imdb,imgSrc,category,}=req.body;
 
-    // add product 
+    // add movie
 
-    let product = await Products.create({
+    let movie = await Movies.create({
         title,
         acter,
         releoreData,
@@ -16,16 +16,16 @@ export const addProduct =  async (req,res)=>{
     res.json({
         massage:" your movie has been ",
         success:true,
-        product
+        movie
     })
 } 
 
 // get All product  
 
-export const getAllProduct =async(req,res)=>{
+export const getAllMovie =async(req,res)=>{
     try{
-        let product= await Products.find()
-        res.json({message:"All product",product});
+        let movie = await Movies.find()
+        res.json({message:"All product",movie});
     }
     catch (error){
         res.json( {massage: error.massage,success:false})
@@ -35,11 +35,11 @@ export const getAllProduct =async(req,res)=>{
 
 // get product by id 
 
-export const getProductById =async (req,res)=>{
+export const getMovieById =async (req,res)=>{
     const id = req.params.id;
-    let product = await Products.findById(id)
+    let movie = await Movies.findById(id)
 
-    res.json({massage:'product  By Id ',product})
+    res.json({massage:'product  By Id ',movie})
 
     
 }
@@ -48,9 +48,9 @@ export const getProductById =async (req,res)=>{
 
 export const deleteById =async (req,res)=>{
     const id = req.params.id;
-    let product = await Products.findByIdAndDelete(id)
+    let movie = await Movies.findByIdAndDelete(id)
 
-    if(!product) return res.json({massage:"invaild id "});
+    if(!movie) return res.json({massage:"invaild id "});
 
     res.json({massage:'product  By Id belete '})
     
@@ -59,9 +59,9 @@ export const deleteById =async (req,res)=>{
 
 export const updateById =async (req,res)=>{
     const id = req.params.id;
-    let product = await Products.findByIdAndUpdate(id,req.body,{new:true})
+    let movie = await Movies.findByIdAndUpdate(id,req.body,{new:true})
 
-    if(!product) return res.json({massage:"invaild id "});
+    if(!movie) return res.json({massage:"invaild id "});
 
     res.json({massage:'product  By Id belete '})
 
