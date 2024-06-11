@@ -1,12 +1,15 @@
 
 import React, { useContext } from 'react'
 import ProductContext from './Context/ProductContext'
+import ProductSlider from './components/ProductSlider'
+import Product from './components/Product'
 
 const App = () => {
-    const {data}=useContext(ProductContext)
+    // const {}=useContext(ProductContext)
   return (
     <>
-    App{data}
+    <ProductSlider/>
+    <Product/>
     </>
   )
 }

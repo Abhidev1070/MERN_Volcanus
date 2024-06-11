@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const ProductState = (props) => {
 
-  const [product, setProduct] = useState()
+  const [products, setProducts] = useState([])
 
   const url = "http://localhost:5000/api";
 
@@ -18,13 +18,14 @@ const fetchProduct = async ()=>{
     withCredentials:true,
   });
   console.log(" fecthe Data",api.data.product);
-  setProduct(api.data.product);
+  setProducts(api.data.product);
 }
 fetchProduct();
   }, [])
   
   return (
-    <ProductContext.Provider value={{ data: 10, }}>
+    <ProductContext.Provider 
+    value={{products}}>
 
       {props.children}
 
