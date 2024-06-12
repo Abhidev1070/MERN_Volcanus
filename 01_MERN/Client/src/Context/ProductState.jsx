@@ -10,22 +10,42 @@ const ProductState = (props) => {
   const url = "http://localhost:5000/api";
 
   useEffect(() => {
-const fetchProduct = async ()=>{
-  const api = await axios.get(`${url}/product/get`,{
-    headers:{
-      " content-type":" Application/json",
-    },
-    withCredentials:true,
-  });
-  console.log(" fecthe Data",api.data.product);
-  setProducts(api.data.product);
-}
-fetchProduct();
+    const fetchProduct = async () => {
+      const api = await axios.get(`${url}/product/get`, {
+        headers: {
+          " content-type": " Application/json",
+        },
+        withCredentials: true,
+      });
+      console.log(" fecthe Data", api.data.product);
+      setProducts(api.data.product);
+    }
+    fetchProduct();
   }, [])
-  
+
+  // add product 
+  const addProduct = async (
+    title,
+    description,
+    price,
+    qty,
+    imgSrc,
+    category,
+  ) => {
+    const api = await axios.post(`${url}/product/add`, {
+      title,
+      description,
+      price,
+      qty,
+      imgSrc,
+      category,
+
+    })
+  }
+
   return (
-    <ProductContext.Provider 
-    value={{products}}>
+    <ProductContext.Provider
+      value={{ products }}>
 
       {props.children}
 

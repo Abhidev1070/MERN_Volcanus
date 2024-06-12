@@ -21,7 +21,9 @@ function ProductSlider() {
       backgroundColor:"yellow",
       width:"90%",
       margin:"auto",
-      height:"300px"
+      height:"300px",
+      position:"relative",
+      zIndex:-1,
 
     }}>
       <Slider {...settings}>
@@ -32,17 +34,12 @@ function ProductSlider() {
           <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/cc633426b89ad841.png?q=20" alt="" />
         </div>
         <div>
-        <img src="" alt="" />
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/f241e768f8367561.jpg?q=20" alt="" />
         </div>
         <div>
-          <h3>4</h3>
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/1e31c9d65e3b4592.jpg?q=20" alt="" />
         </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
+        
       </Slider>
     </div>
   );
