@@ -11,7 +11,7 @@ const Navbar = () => {
             top:"0"
 
         }}>
-        <div className="left">
+        <div className="left">Logo
 
         </div>
         <div className="right">

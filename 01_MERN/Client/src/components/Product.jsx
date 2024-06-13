@@ -1,9 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import ProductContext from '../Context/ProductContext'
 import ProductSlider from './ProductSlider'
 
 const Product = () => {
     const {products} = useContext(ProductContext)
+    
+    
   return (
     <>
     <ProductSlider/>
