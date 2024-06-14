@@ -56,9 +56,12 @@ const ProductState = (props) => {
     // console.log(api);
   }
 
+
+
+
   return (
     <ProductContext.Provider
-      value={{ products,addProduct }} >
+      value={{ products,addProduct,url }} >
 
       {props.children}
 

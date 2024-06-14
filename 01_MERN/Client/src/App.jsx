@@ -8,6 +8,7 @@ import {BrowserRouter as Router ,Routes,Route, BrowserRouter} from "react-router
 import Login from './pages/Login'
 import Register from './pages/Register'
 import AddProduct from './pages/AddProduct'
+import Product_Detail from './pages/Product_Detail'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Route path='/login' element={ <Login/>}/>
       <Route path='/register' element={ <Register/>}/>
       <Route path='/addproduct' element={ <AddProduct/>}/>
+      <Route path='/product/:id' element={<Product_Detail/>}/>
     </Routes>
     </BrowserRouter>
 
