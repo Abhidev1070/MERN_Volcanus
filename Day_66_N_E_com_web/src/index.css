@@ -2,3 +2,64 @@ body{
   background-color: #000;
   color:#fff;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
+.nav_bar{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color:chartreuse;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+z-index: 1;
+
+}
+.beand img{
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  border: 2px solid rgb(28, 28, 2) ;
+
+}
+.search_bar{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  background-color: #000;
+  border: 2px solid #ff0000;
+  padding: 5px;
+  gap: 10px;
+  border-radius: 20px;
+
+}
+.search_bar input{
+  width: 500px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+input:focus{
+  outline: none;
+}
+.cart{
+  background-color: forestgreen;
+  font-size: 30px;
+  margin-right: 120px;
+  padding: 10px;
+  position: relative;
+}
+.cart_0{
+  position:absolute ;
+  background-color: #ff0000;
+  width: 20px;
+  height: 30px;
+  top: -10px;
+  right: -10px;
+
+}
+input::placeholder{
+  font-weight: bold;
+  color: #fff;
+}
