@@ -15,10 +15,11 @@ const App = () => {
 
       <BrowserRouter>
       <Navbar/>
-      <Products data={data}/>
+     
         <Routes>
 
-          <Route />
+        <Route path="/" element={<Products data={data} />} />
+        <Route path="/product/:id" element={<Product_Detail />} />
 
           
         </Routes>
