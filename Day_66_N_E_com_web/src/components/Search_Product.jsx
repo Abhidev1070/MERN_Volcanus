@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { items } from '../data';
+import Products from './Products';
 
 const Search_Product = () => {
+  const {term} =useParams();
+  const [searchData, setsearchData] = useState([])
+  useEffect(() => {
+    setsearchData(items.filter((data)=>data.title.toLocaleLowerCase().includes(term.toLocaleLowerCase())))
+
+   console.log(searchData);
+  }, [term])
+  
   return (
-    <div>Search_Product</div>
+    <div>
+    
+    <Products data={searchData}/>
+    
+    </div>
   )
 }
 
