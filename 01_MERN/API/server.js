@@ -3,6 +3,7 @@ import bodyParser from 'express'
 import  mongoose from 'mongoose';
 import productRouter from './Routes/product.js'
 import cors from 'cors'
+import UserRouter from "./Routes/user.js"
 
 
 const app = express();
@@ -18,6 +19,10 @@ app.use(
 
 // product  router 
 app.use("/api/product",productRouter)
+
+//user router
+
+app.use("/api/user",UserRouter);
 
 
 mongoose.connect(
