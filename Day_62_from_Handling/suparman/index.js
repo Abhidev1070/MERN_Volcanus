@@ -1,5 +1,5 @@
-import { error } from 'console';
-import {readFile,writeFile,appendFile,mkdir,readdir} from 'fs/promises'
+// import { error } from 'console';
+// import {readFile,writeFile,appendFile,mkdir,readdir} from 'fs/promises'
 // const readdirContext =async(filapath)=>{
 //     try{
 //         await readFile(filapath);
@@ -19,10 +19,10 @@ import {readFile,writeFile,appendFile,mkdir,readdir} from 'fs/promises'
 
 // await appendFile1('text.php','This is my anot')
 
-const readdirA =async(e) =>{
-    const Abhi = await readdir(e)
-    console.log(Abhi)
-}
-await readdirA ('Superman')
+// const readdirA =async(e) =>{
+//     const Abhi = await readdir(e)
+//     console.log(Abhi)
+// }
+// await readdirA ('Superman')
 
 

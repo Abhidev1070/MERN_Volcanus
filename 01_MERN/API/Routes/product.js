@@ -31,12 +31,6 @@ router.put("/:id",updateById)
 //@route-// api/product/id
 router.delete("/:id",deleteById)
 
-
-
-
-
-
-
 //home product 
 //@method -home 
 //@route-// api/product/home

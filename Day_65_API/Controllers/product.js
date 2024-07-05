@@ -54,6 +54,17 @@ export const updateById =async (req,res)=>{
 
 
 }
+
+// dalete product by id 
+
+export const deleteById =async (req,res)=>{
+    const id = req.params.id;
+    let product  = await Products.findByIdAndDelete(id)
+    if(!product) return res.json({massage:"invaild id "});
+    res.json({massage: "your  prodcut by ipdate "})
+
+
+}
     
 
 
@@ -61,3 +72,5 @@ export const updateById =async (req,res)=>{
  export const home = async(req,res)=>{
     res.json({massage:"this is home"})
  }
+ 
+ 

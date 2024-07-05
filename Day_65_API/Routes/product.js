@@ -1,5 +1,5 @@
 import express from 'express'
-import { addProduct,getAllProduct, home,getProductById,updateById } from '../Controllers/product.js';
+import { addProduct,getAllProduct, home,getProductById,updateById,deleteById } from '../Controllers/product.js';
 
 const router = express.Router();
 
@@ -25,6 +25,11 @@ router.get("/:id",getProductById)
 //@method - put 
 //@route-// api/product/id
 router.put("/:id",updateById)
+
+// daleteById product by id  
+//@method - delete
+//@route-// api/product/id
+router.delete("/:id",deleteById)
 
 
 
