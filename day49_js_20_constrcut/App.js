@@ -173,7 +173,7 @@ console.log(z);*/
 // const arr = ["Apple","Orange",230,40,21.2344];
 // for(let val of arr){
 //     console.log(val);
-// }
+// } 
 
 // let arr = [10,20,30,40,"Apple","Orange","Banana",2345.45]
 // // console.log(arr[4]);
@@ -257,12 +257,16 @@ console.log(z);*/
 // let a = Abhi();
 // a();
 
-// const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
+const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
+
 
 // for(let value of arr){
 //     console.log(value);
 // }
+// console.log(arr.push("abhi"));
+// console.log(arr.pop());
 // console.log(arr.shift());
+// console.log(arr.unshift());
 // console.log(arr.splice(2,1));
 // console.log(arr.slice(0,3));
 // console.log(arr.indexOf("iphon"));
@@ -270,6 +274,18 @@ console.log(z);*/
 // console.log(arr.includes("iphon"));
 // console.log(arr.sort());
 // console.log(arr.toString());
+// console.log(arr.join("."));
+// console.log(arr1.reduce(arr1)); // * not andestending of reduce
+// console.log(arr.toSpliced(1, 0, "Abhi"));
+// console.log(arr.values(arr)); // not andestending of values 
+// console.log(arr.with(2, "Abhi")); 
+// let index = 2
+// console.log(arr.at(2));
+// console.log(arr.fill("Abhi"));
+// console.log(arr.fill("Abhi",2));
+// console.log(arr.fill("Abhi",0,2));
+// console.log(arr.find()); // not andstend 
+
 
 // for (var i=0;i<5;i++){
 //            function a(x){
@@ -325,7 +341,6 @@ console.log(z);*/
 // console.log(result);
 
 // console.log(str.length);
-
 // console.log(str.charAt(4));
 
 
@@ -510,29 +525,29 @@ console.log(z);*/
 // const str = "The suparman is belong from DC"
 // console.log(str.split(' '));
 
-const removeSpecialChar = (str)=>{
-    let specialChar = [];
-    let Alphabet =[];
+// const removeSpecialChar = (str)=>{
+//     let specialChar = [];
+//     let Alphabet =[];
     
-    for(let i=0; i<str.length; i++){
-        let char = str.charAt(i);
-        let ascii = char.charCodeAt(0);
+//     for(let i=0; i<str.length; i++){
+//         let char = str.charAt(i);
+//         let ascii = char.charCodeAt(0);
 
-        if((ascii >= 65 && ascii <= 91) || (ascii >= 97 && ascii <= 123)){
-            Alphabet +=char;
+//         if((ascii >= 65 && ascii <= 91) || (ascii >= 97 && ascii <= 123)){
+//             Alphabet +=char;
 
-        }
-        else{
-            specialChar += char;
-        }
+//         }
+//         else{
+//             specialChar += char;
+//         }
 
-    }
-    console.log( " a= ,",Alphabet);
-    console.log(specialChar);
-}
+//     }
+//     console.log( " a= ,",Alphabet);
+//     console.log(specialChar);
+// }
 
-removeSpecialChar();
-let str = "sd@g$g%vg^g%hy%h%^&U**&^%#";
+// removeSpecialChar();
+// let str = "sd@g$g%vg^g%hy%h%^&U**&^%#";
 
 
 
