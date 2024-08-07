@@ -540,17 +540,9 @@ const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
 //         else{
 //             specialChar += char;
 //         }
-<<<<<<< HEAD
 
-//     }
-//     console.log( " a= ,",Alphabet);
-//     console.log(specialChar);
-// }
 
-// removeSpecialChar();
-// let str = "sd@g$g%vg^g%hy%h%^&U**&^%#";
-=======
->>>>>>> 20c20f2a21515af71b7688ab5e4cd5ce77f39bad
+//     }1515af71b7688ab5e4cd5ce77f39bad
 
 //     }
 //     console.log( " a= ,",Alphabet);
@@ -562,12 +554,12 @@ const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
 
 // typeof 
 
-(function(){
-    let a = b = 3;
-  })();
+// (function(){
+//     let a = b = 3;
+//   })();
   
-  console.log("a defined? " + (typeof a !== 'undefined'));
-  console.log("b defined? " + (typeof b !== 'undefined'));
+//   console.log("a defined? " + (typeof a !== 'undefined'));
+//   console.log("b defined? " + (typeof b !== 'undefined'));
 
 
 
