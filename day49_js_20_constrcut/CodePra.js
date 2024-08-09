@@ -32,11 +32,24 @@
 
 // question 3
 
-function checkValue(x) {
-   return (x > 10) ? 'Greater' : (x === 10) ? 'Equal' : 'Less';
-}
+// function checkValue(x) {
+//    return (x > 10) ? 'Greater' : (x === 10) ? 'Equal' : 'Less';
+// }
 
-console.log(checkValue(12));
-console.log(checkValue(10));
-console.log(checkValue(8));
+// console.log(checkValue(12));
+// console.log(checkValue(10));
+// console.log(checkValue(8));
+
+// question 4
+
+const arr = [1, 2, 3, 4, 5];
+
+const sum = arr.reduce((previousSum, element) => {
+  const newSum = previousSum + element;
+//   console.log(previousSum);
+//   console.log(element);
+  return newSum;
+}, 0); 
+
+console.log(sum); 
 
