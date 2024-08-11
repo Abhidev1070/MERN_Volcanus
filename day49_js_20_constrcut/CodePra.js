@@ -55,25 +55,44 @@
 
 /// question 5
 
-function isPrime(num) { 
-   if (num <= 1) return false; 
+// function isPrime(num) { 
+//    if (num <= 1) return false; 
  
-   for (let i = 2; i <= Math.sqrt(num); i++) { 
-     if (num % i === 0) return false; 
-   } 
+//    for (let i = 2; i <= Math.sqrt(num); i++) { 
+//      if (num % i === 0) return false; 
+//    } 
  
-   return true; 
- }
+//    return true; 
+//  }
  
  // Test the function with a range of numbers
 
- function testPrimes() {
-   const numbersToTest = [0, 1, 2, 3, 4, 5, 10, 13, 17, 18, 19, 20];
-   numbersToTest.forEach((num) => {
-     console.log(`Is ${num} a prime number? ${isPrime(num)}`);
-   });
- }
+//  function testPrimes() {
+//    const numbersToTest = [0, 1, 2, 3, 4, 5, 10, 13, 17, 18, 19, 20];
+//    numbersToTest.forEach((num) => {
+//      console.log(`Is ${num} a prime number? ${isPrime(num)}`);
+//    });
+//  }
  
- testPrimes();
+//  testPrimes();
+
+/// question 6 
+
+
+
+
+let myObject = {
+    foo: "bar",
+    func: function() {
+        var self = this;
+        console.log("outer func:  this.foo = " + this.foo);
+        console.log("outer func:  self.foo = " + self.foo);
+        (function() {
+            console.log("inner func:  this.foo = " + this.foo);
+            console.log("inner func:  self.foo = " + self.foo);
+        }());
+    }
+};
+myObject.func();
  
 
