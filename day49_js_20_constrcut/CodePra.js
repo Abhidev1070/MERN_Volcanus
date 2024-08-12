@@ -79,20 +79,39 @@
 /// question 6 
 
 
+// let myObject = {
+//     foo: "bar",
+//     func: function() {
+//         var self = this;
+//         console.log("outer func:  this.foo = " + this.foo);
+//         console.log("outer func:  self.foo = " + self.foo);
+//         (function() {
+//             console.log("inner func:  this.foo = " + this.foo);
+//             console.log("inner func:  self.foo = " + self.foo);
+//         }());
+//     }
+// };
+// myObject.func();
 
 
-let myObject = {
-    foo: "bar",
-    func: function() {
-        var self = this;
-        console.log("outer func:  this.foo = " + this.foo);
-        console.log("outer func:  self.foo = " + self.foo);
-        (function() {
-            console.log("inner func:  this.foo = " + this.foo);
-            console.log("inner func:  self.foo = " + self.foo);
-        }());
-    }
-};
-myObject.func();
- 
+
+
+/// question 7
+
+// const array1 = [1, 4, 7];
+// const array2 = [2, 5, 6];
+
+// function mergeSortedArrays(arr1, arr2) {
+
+//     return [...arr1, ...arr2].sort((a, b) => a - b);
+
+//   }
+
+// const mergedArray = mergeSortedArrays(array1, array2);
+
+// console.log(mergedArray); 
+
+
+// // Output: [1, 2, 4, 5, 6, 7]
+
 
