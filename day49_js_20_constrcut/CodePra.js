@@ -114,4 +114,33 @@
 
 // // Output: [1, 2, 4, 5, 6, 7]
 
+///question 8
+
+let x = 1; // number 1
+let y = '1'; // string 1
+
+
+if (x == y) {
+    console.log('x == y is true'); }
+
+
+if (x === y) {
+    console.log('x === y is true'); 
+}
+
+if (x == y && typeof x === 'number') {
+    console.log('x == y is true and x is a number'); 
+}
+
+if (x === y || typeof y === 'string') {
+    console.log('x === y is true or y is a string'); }
+
+if (!(x === y)) {
+    console.log('x === y is false'); 
+}
+
+if ((x == y && typeof x === 'number') || (typeof y === 'string' && y.length === 1)) {
+    console.log('Either x == y and x is a number, or y is a string with length 1'); 
+}
+
 
