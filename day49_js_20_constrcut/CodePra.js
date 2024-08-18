@@ -145,18 +145,28 @@
 
 ///question 9
 
-var list = [1, 2, 3, 4, 5]; // Replace this with your actual data
+// var list = [1, 2, 3, 4, 5];
 
-var nextListItem = function() {
-    var item = list.pop();
-    if (item) {
+// var nextListItem = function() {
+//     var item = list.pop();
+//     if (item) {
     
-        console.log("Processing item:", item);
-        nextListItem();
-        
-    }
-};
-nextListItem();
+//         console.log("Processing item:", item);
+//         nextListItem();
+
+//     }
+// };
+// nextListItem();
+
+///question 10
+
+function fibonacci(n) {
+   if (n <= 1) return n;
+   return fibonacci(n - 1) + fibonacci(n - 2);
+}
+// Example usage:
+console.log(fibonacci(6)); // Output: 8
+
 
 
   
