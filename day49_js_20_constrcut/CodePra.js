@@ -160,12 +160,32 @@
 
 ///question 10
 
-function fibonacci(n) {
-   if (n <= 1) return n;
-   return fibonacci(n - 1) + fibonacci(n - 2);
+// function fibonacci(n) {
+//    if (n <= 1) return n;
+//    return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+// // Example usage:
+// console.log(fibonacci(6));
+
+ // Output: 8
+
+ ///question 11
+
+ function findSingleNumber(nums) {
+   let result = 0;
+   for (let num of nums) {
+       result ^= num;  
+   }
+   return result; 
 }
-// Example usage:
-console.log(fibonacci(6)); // Output: 8
+
+console.log(findSingleNumber([2, 2, 1]));  
+console.log(findSingleNumber([4, 1, 2, 1, 2]));  
+ // Output: 1
+// Output: 4
+
+
+
 
 
 
