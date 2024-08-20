@@ -171,19 +171,31 @@
 
  ///question 11
 
- function findSingleNumber(nums) {
-   let result = 0;
-   for (let num of nums) {
-       result ^= num;  
-   }
-   return result; 
-}
+//  function findSingleNumber(nums) {
+//    let result = 0;
+//    for (let num of nums) {
+//        result ^= num;  
+//    }
+//    return result; 
+// }
 
-console.log(findSingleNumber([2, 2, 1]));  
-console.log(findSingleNumber([4, 1, 2, 1, 2]));  
+// console.log(findSingleNumber([2, 2, 1]));  
+// console.log(findSingleNumber([4, 1, 2, 1, 2]));  
+
  // Output: 1
 // Output: 4
 
+///question 12
+
+
+const person = {
+   firstName: "Helen",
+   lastName: "Ryan",
+   getFullName: function () {
+    return this.firstName + " " + this.lastName;
+   },
+ };
+ console.log(person.getFullName());
 
 
 
