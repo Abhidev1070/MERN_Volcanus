@@ -188,14 +188,19 @@
 ///question 12
 
 
-const person = {
-   firstName: "Helen",
-   lastName: "Ryan",
-   getFullName: function () {
-    return this.firstName + " " + this.lastName;
-   },
- };
- console.log(person.getFullName());
+// const person = {
+//    firstName: "Helen",
+//    lastName: "Ryan",
+//    getFullName: function () {
+//     return this.firstName + " " + this.lastName;
+//    },
+//  };
+//  console.log(person.getFullName());
+
+
+///question 13
+
+console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
 
 
 
