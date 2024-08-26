@@ -1,3 +1,1 @@
-on removeDuplicates(arr) {
-//    return [...new Set(arr)];
-//  }
+///question 15

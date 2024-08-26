@@ -211,13 +211,35 @@
 
 ///question 15
 
-const arr = [1, 2, 3, 2, 1, 4, 5];
-const uniqueArr = removeDuplicates(arr);
-console.log(uniqueArr); 
+// const arr = [1, 2, 3, 2, 1, 4, 5];
+// const uniqueArr = removeDuplicates(arr);
+// console.log(uniqueArr); 
 
-function removeDuplicates(arr) {
-   return [...new Set(arr)];
+// function removeDuplicates(arr) {
+//    return [...new Set(arr)];
+//  }
+
+
+
+///question 16
+
+
+function findSecondLargest(arr) { 
+  arr.sort((a, b) => b - a); 
+  return arr[1]; 
+}
+
+let numbers = [10, 5, 20, 15];
+console.log(findSecondLargest(numbers));  // Output: 15
+
+function findSecondLargest(arr) {
+   let uniqueArr = [...new Set(arr)];  // Remove duplicates
+   if (uniqueArr.length < 2) return null; // Handle arrays with less than two elements
+   uniqueArr.sort((a, b) => b - a); 
+   return uniqueArr[1]; 
  }
+ 
+ ///question 17
  
 
   
