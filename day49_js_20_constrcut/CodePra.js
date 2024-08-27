@@ -224,22 +224,38 @@
 ///question 16
 
 
-function findSecondLargest(arr) { 
-  arr.sort((a, b) => b - a); 
-  return arr[1]; 
-}
+// function findSecondLargest(arr) { 
+//   arr.sort((a, b) => b - a); 
+//   return arr[1]; 
+// }
 
-let numbers = [10, 5, 20, 15];
-console.log(findSecondLargest(numbers));  // Output: 15
+// let numbers = [10, 5, 20, 15];
+// console.log(findSecondLargest(numbers));  // Output: 15
 
-function findSecondLargest(arr) {
-   let uniqueArr = [...new Set(arr)];  // Remove duplicates
-   if (uniqueArr.length < 2) return null; // Handle arrays with less than two elements
-   uniqueArr.sort((a, b) => b - a); 
-   return uniqueArr[1]; 
- }
+// function findSecondLargest(arr) {
+//    let uniqueArr = [...new Set(arr)];  // Remove duplicates
+//    if (uniqueArr.length < 2) return null; // Handle arrays with less than two elements
+//    uniqueArr.sort((a, b) => b - a); 
+//    return uniqueArr[1]; 
+//  }
  
  ///question 17
+
+ [0, 1, 1, 2, 3, 5, 8, 13]
+
+ function fibonacciWithMemoization(n) { 
+  let memo = [0, 1]; 
+
+  for (let i = 2; i <= n; i++) { 
+    memo[i] = memo[i - 1] + memo[i - 2]; 
+  } 
+
+  return memo; 
+}
+
+let result = fibonacciWithMemoization(7);
+console.log(result); 
+
  
 
   
