@@ -241,20 +241,31 @@
  
  ///question 17
 
- [0, 1, 1, 2, 3, 5, 8, 13]
+//  [0, 1, 1, 2, 3, 5, 8, 13]
 
- function fibonacciWithMemoization(n) { 
-  let memo = [0, 1]; 
+//  function fibonacciWithMemoization(n) { 
+//   let memo = [0, 1]; 
 
-  for (let i = 2; i <= n; i++) { 
-    memo[i] = memo[i - 1] + memo[i - 2]; 
-  } 
+//   for (let i = 2; i <= n; i++) { 
+//     memo[i] = memo[i - 1] + memo[i - 2]; 
+//   } 
 
-  return memo; 
-}
+//   return memo; 
+// }
 
-let result = fibonacciWithMemoization(7);
-console.log(result); 
+// let result = fibonacciWithMemoization(7);
+// console.log(result); 
+
+///question 18
+
+const arr = [1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 6, 7, 9];
+
+const uniqueArr = removeDuplicates(arr);
+console.log(uniqueArr); 
+
+function removeDuplicates(arr) {
+   return [...new Set(arr)];
+ }
 
  
 
