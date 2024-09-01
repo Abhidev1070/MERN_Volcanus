@@ -258,16 +258,66 @@
 
 ///question 18
 
-const arr = [1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 6, 7, 9];
+// const arr = [1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 6, 7, 9];
 
-const uniqueArr = removeDuplicates(arr);
-console.log(uniqueArr); 
+// const uniqueArr = removeDuplicates(arr);
+// console.log(uniqueArr); 
 
-function removeDuplicates(arr) {
-   return [...new Set(arr)];
- }
+// function removeDuplicates(arr) {
+//    return [...new Set(arr)];
+//  }\
+
+
+///question 19
+
+// function largestDifference(arr) { 
+
+//    let min = arr[0]; 
+ 
+//    let maxDiff = 0; 
+ 
+//    for (let i = 1; i < arr.length; i++) { 
+ 
+//      if (arr[i] < min) { 
+ 
+//        min = arr[i]; 
+ 
+//      }
+ 
+//  else { 
+ 
+//        const diff = arr[i] – min; 
+ 
+//        if (diff > maxDiff) { 
+ 
+//          maxDiff = diff; 
+ 
+//        } 
+ 
+//      } 
+ 
+//    } 
+ 
+//    return maxDiff; 
+ 
+//  } 
 
  
+///question 20
+
+function flattenArray(arr) {
+  return arr.reduce((acc, val) => {
+    if (Array.isArray(val)) {
+      acc = acc.concat(flattenArray(val)); 
+    } else {
+      acc.push(val); 
+    }
+    return acc;
+  }, []);
+}
+const nestedArray = [1, [2, [3, 4], 5], 6];
+console.log(flattenArray(nestedArray)); 
+// Output: [1, 2, 3, 4, 5, 6]
 
   
 
