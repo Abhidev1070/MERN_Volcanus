@@ -319,7 +319,26 @@ const nestedArray = [1, [2, [3, 4], 5], 6];
 console.log(flattenArray(nestedArray)); 
 // Output: [1, 2, 3, 4, 5, 6]
 
+
+///question 21
   
+function countCharacterOccurrences(str) {
+ 
+  const charCount = {};
+  for (let char of str) {
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+  return charCount;
+}
+
+
+console.log(countCharacterOccurrences("hello"));
+// Output: { h: 1, e: 1, l: 2, o: 1 }
+
+console.log(countCharacterOccurrences("javascript"));
+// 1 Output: { h: 1, e: 1, l: 2, o: 1 }
+// 2 Output: { j: 1, a: 2, v: 
+
 
 
 
