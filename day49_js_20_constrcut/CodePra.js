@@ -322,24 +322,34 @@ console.log(flattenArray(nestedArray));
 
 ///question 21
   
-function countCharacterOccurrences(str) {
+// function countCharacterOccurrences(str) {
  
-  const charCount = {};
-  for (let char of str) {
-    charCount[char] = (charCount[char] || 0) + 1;
-  }
-  return charCount;
+//   const charCount = {};
+//   for (let char of str) {
+//     charCount[char] = (charCount[char] || 0) + 1;
+//   }
+//   return charCount;
+// }
+
+
+// console.log(countCharacterOccurrences("hello"));
+// // Output: { h: 1, e: 1, l: 2, o: 1 }
+
+// console.log(countCharacterOccurrences("javascript"));
+// // 1 Output: { h: 1, e: 1, l: 2, o: 1 }
+// // 2 Output: { j: 1, a: 2, v: 
+
+
+///question 22
+
+function getUniqueElements(arr) {
+  return Array.from(new Set(arr));
 }
 
-
-console.log(countCharacterOccurrences("hello"));
-// Output: { h: 1, e: 1, l: 2, o: 1 }
-
-console.log(countCharacterOccurrences("javascript"));
-// 1 Output: { h: 1, e: 1, l: 2, o: 1 }
-// 2 Output: { j: 1, a: 2, v: 
-
-
+const array = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = getUniqueElements(array);
+console.log(uniqueArray);  
+// Output: [1, 2, 3, 4, 5]
 
 
 
