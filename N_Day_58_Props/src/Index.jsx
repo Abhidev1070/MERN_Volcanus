@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Data } from './Data'
 
-const Index = () => {
+const Index = (props) => {
     const [images, setimages] = useState(Data);
 
     const filterbyCategory = (cat) =>{
@@ -12,7 +12,7 @@ const Index = () => {
 
     return (
         <>
-        <button onClick={()=>filterbyCategory("A")}>A</button>
+        <button onClick={()=>filterbyCategory("A")}>{props.tital}</button>
         <button  onClick={()=>filterbyCategory("B")}>B</button>
         <button  onClick={()=>filterbyCategory("C")}>C</button>
         <button  onClick={()=>filterbyCategory("D")}>D</button>
