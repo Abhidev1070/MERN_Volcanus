@@ -342,14 +342,27 @@ console.log(flattenArray(nestedArray));
 
 ///question 22
 
-function getUniqueElements(arr) {
-  return Array.from(new Set(arr));
+// function getUniqueElements(arr) {
+//   return Array.from(new Set(arr));
+// }
+
+// const array = [1, 2, 2, 3, 4, 4, 5];
+// const uniqueArray = getUniqueElements(array);
+// console.log(uniqueArray);  
+// // Output: [1, 2, 3, 4, 5]
+
+///question 23
+
+function reverseString(str) {
+  let reversed = ""; 
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i]; 
+  }
+
+  return reversed; 
 }
 
-const array = [1, 2, 2, 3, 4, 4, 5];
-const uniqueArray = getUniqueElements(array);
-console.log(uniqueArray);  
-// Output: [1, 2, 3, 4, 5]
 
 
 
