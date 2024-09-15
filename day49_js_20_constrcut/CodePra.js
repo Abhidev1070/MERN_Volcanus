@@ -305,18 +305,18 @@
  
 ///question 20
 
-function flattenArray(arr) {
-  return arr.reduce((acc, val) => {
-    if (Array.isArray(val)) {
-      acc = acc.concat(flattenArray(val)); 
-    } else {
-      acc.push(val); 
-    }
-    return acc;
-  }, []);
-}
-const nestedArray = [1, [2, [3, 4], 5], 6];
-console.log(flattenArray(nestedArray)); 
+// function flattenArray(arr) {
+//   return arr.reduce((acc, val) => {
+//     if (Array.isArray(val)) {
+//       acc = acc.concat(flattenArray(val)); 
+//     } else {
+//       acc.push(val); 
+//     }
+//     return acc;
+//   }, []);
+// }
+// const nestedArray = [1, [2, [3, 4], 5], 6];
+// console.log(flattenArray(nestedArray)); 
 // Output: [1, 2, 3, 4, 5, 6]
 
 
@@ -353,16 +353,28 @@ console.log(flattenArray(nestedArray));
 
 ///question 23
 
-function reverseString(str) {
-  let reversed = ""; 
+// function reverseString(str) {
+//   let reversed = ""; 
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i]; 
-  }
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i]; 
+//   }
 
-  return reversed; 
+//   return reversed; 
+// }
+
+///question 24
+
+
+function modifyArray(arr, callback) {
+  arr.push(100);
+  callback();
 }
 
+var arr = [1, 2, 3, 4, 5];
+modifyArray(arr, function() {
+  console.log("array has been modified", arr);
+});
 
 
 
