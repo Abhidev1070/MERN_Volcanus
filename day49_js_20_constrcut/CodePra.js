@@ -366,15 +366,30 @@
 ///question 24
 
 
-function modifyArray(arr, callback) {
-  arr.push(100);
-  callback();
-}
+// function modifyArray(arr, callback) {
+//   arr.push(100);
+//   callback();
+// }
 
-var arr = [1, 2, 3, 4, 5];
-modifyArray(arr, function() {
-  console.log("array has been modified", arr);
-});
+// var arr = [1, 2, 3, 4, 5];
+// modifyArray(arr, function() {
+//   console.log("array has been modified", arr);
+// });
+
+///question 25
+
+var arr = [
+	"hello world",
+	42,
+	true
+];
+arr[0];			
+arr[1];		
+arr[2];			
+arr.length;		
+typeof arr;
+console.log(arr);
+console.log(arr.length);
 
 
 
