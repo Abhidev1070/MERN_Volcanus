@@ -378,18 +378,36 @@
 
 ///question 25
 
-var arr = [
-	"hello world",
-	42,
-	true
-];
-arr[0];			
-arr[1];		
-arr[2];			
-arr.length;		
-typeof arr;
-console.log(arr);
-console.log(arr.length);
+// var arr = [
+// 	"hello world",
+// 	42,
+// 	true
+// ];
+// arr[0];			
+// arr[1];		
+// arr[2];			
+// arr.length;		
+// typeof arr;
+// console.log(arr);
+// console.log(arr.length);
 
+///question 25
+// callMe();
+
+
+function callMe() {
+   if (this === window) {
+       console.log("Function is called in non-strict mode.");
+   }
+   if (this === undefined) {
+       console.log("Function is called in strict mode.");
+   }
+}
+
+callMe();
+
+// In strict mode
+// "use strict";
+// callMe(); 
 
 
