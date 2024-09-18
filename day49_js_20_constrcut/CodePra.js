@@ -395,19 +395,40 @@
 // callMe();
 
 
-function callMe() {
-   if (this === window) {
-       console.log("Function is called in non-strict mode.");
-   }
-   if (this === undefined) {
-       console.log("Function is called in strict mode.");
-   }
-}
+// function callMe() {
+//    if (this === window) {
+//        console.log("Function is called in non-strict mode.");
+//    }
+//    if (this === undefined) {
+//        console.log("Function is called in strict mode.");
+//    }
+// }
 
-callMe();
+// callMe();
 
 // In strict mode
 // "use strict";
 // callMe(); 
 
 
+///question 25
+
+function foo1()
+{
+  return {
+      bar: "hello"
+  };
+}
+
+function foo2()
+{
+  return
+  {
+      bar: "hello"
+  };
+}
+
+console.log("foo1 returns:");
+console.log(foo1());
+console.log("foo2 returns:");
+console.log(foo2());
