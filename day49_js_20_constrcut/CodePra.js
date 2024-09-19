@@ -411,24 +411,36 @@
 // callMe(); 
 
 
-///question 25
+///question 26
 
-function foo1()
-{
-  return {
-      bar: "hello"
-  };
+// function foo1()
+// {
+//   return {
+//       bar: "hello"
+//   };
+// }
+
+// function foo2()
+// {
+//   return
+//   {
+//       bar: "hello"
+//   };
+// }
+
+// console.log("foo1 returns:");
+// console.log(foo1());
+// console.log("foo2 returns:");
+// console.log(foo2());
+
+///question 27
+
+let user = { name: 'Bill' };
+
+function sayHello(greeting) {
+  console.log(`${greeting} ${this.name}`);
 }
 
-function foo2()
-{
-  return
-  {
-      bar: "hello"
-  };
-}
+sayHello('Hello'); 
+sayHello.call(user, 'Hello'); 
 
-console.log("foo1 returns:");
-console.log(foo1());
-console.log("foo2 returns:");
-console.log(foo2());
