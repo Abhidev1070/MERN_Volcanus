@@ -435,12 +435,20 @@
 
 ///question 27
 
-let user = { name: 'Bill' };
+// let user = { name: 'Bill' };
 
-function sayHello(greeting) {
-  console.log(`${greeting} ${this.name}`);
-}
+// function sayHello(greeting) {
+//   console.log(`${greeting} ${this.name}`);
+// }
+// sayHello('Hello'); 
+// sayHello.call(user, 'Hello'); 
 
-sayHello('Hello'); 
-sayHello.call(user, 'Hello'); 
+
+///question 27
+
+let sayHello = function (name) {
+  console.log(`Hello ${name}`);
+};
+
+sayHello('Chris'); 
 
