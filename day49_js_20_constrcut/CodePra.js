@@ -454,16 +454,29 @@
 
 
 ///question 28
-function isPalindrome(str) {
- 
-  const cleanedStr = str.replace(/[^\w]/g, "").toLowerCase();
-  
-  const reversedStr = cleanedStr.split("").reverse().join("");
-  
-  return cleanedStr === reversedStr;
-}
-console.log(isPalindrome("A man, a plan, a canal, Panama"));  
-console.log(isPalindrome("Hello"));  
 
+// function isPalindrome(str) {
+ 
+//   const cleanedStr = str.replace(/[^\w]/g, "").toLowerCase();
+  
+//   const reversedStr = cleanedStr.split("").reverse().join("");
+  
+//   return cleanedStr === reversedStr;
+// }
+// console.log(isPalindrome("A man, a plan, a canal, Panama"));  
+// console.log(isPalindrome("Hello"));  
+
+///question 29
+
+function outer() {
+   let count = 0;
+   return function inner() {
+     count++;
+     console.log(count);
+   };
+ }
+ const increment = outer();
+ increment(); 
+ increment();
 
 
