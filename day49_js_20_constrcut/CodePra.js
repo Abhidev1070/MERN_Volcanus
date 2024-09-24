@@ -468,15 +468,31 @@
 
 ///question 29
 
-function outer() {
-   let count = 0;
-   return function inner() {
-     count++;
-     console.log(count);
-   };
- }
- const increment = outer();
- increment(); 
- increment();
+// function outer() {
+//    let count = 0;
+//    return function inner() {
+//      count++;
+//      console.log(count);
+//    };
+//  }
+//  const increment = outer();
+//  increment(); 
+//  increment();
 
+///question 30
+
+let n = 5;
+let string = "";
+for (let i = 1; i <= n; i++) {
+
+  for (let j = 0; j < n - i; j++) {
+    string += " ";
+  }
+  
+  for (let k = 0; k < i; k++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
 
