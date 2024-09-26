@@ -498,18 +498,31 @@
 
 ///question 31
 
-let n=10;
- let String= "";
+// let n=10;
+//  let String= "";
 
- for(let i=1; i<=n; i++){
-  for(let j=0; j<n+i; j++){
-    String +="";
-  }
-  for(let k=0; k<i;k++){
-    String +='*';
-  }
-  String +='\n';
- }
-console.log(String)
+//  for(let i=1; i<=n; i++){
+//   for(let j=0; j<n+i; j++){
+//     String +="";
+//   }
+//   for(let k=0; k<i;k++){
+//     String +='*';
+//   }
+//   String +='\n';
+//  }
+// console.log(String)
 
+
+///question 32
+
+let n = 5; 
+let string = "";
+
+for(let i = 0; i < n; i++) { 
+  for(let j = 0; j < n; j++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
 
