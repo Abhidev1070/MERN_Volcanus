@@ -1,19 +1,19 @@
-   /// question 1 
-   
-  //  function findMissingNumber(arr) {
-  //   let n = arr.length + 1;
-  //   let totalSum = (n * (n + 1)) / 2; 
-  //   let arraySum = arr.reduce((acc, num) => acc + num, 0); 
-  //   return totalSum - arraySum;
-  // }
-  
-  // console.log(findMissingNumber([1, 2, 4, 5, 6,8])); 
+/// question 1 
 
-   /// question 2
+//  function findMissingNumber(arr) {
+//   let n = arr.length + 1;
+//   let totalSum = (n * (n + 1)) / 2; 
+//   let arraySum = arr.reduce((acc, num) => acc + num, 0); 
+//   return totalSum - arraySum;
+// }
+
+// console.log(findMissingNumber([1, 2, 4, 5, 6,8])); 
+
+/// question 2
 
 //    function hasPairWithSum(arr, target) {
 //     const seen = new Set();
-    
+
 //     for (const num of arr) {
 //         const complement = target - num;
 //         if (seen.has(complement)) {
@@ -21,7 +21,7 @@
 //         }
 //         seen.add(num);
 //     }
-    
+
 //     return false;
 // }
 
@@ -57,15 +57,15 @@
 
 // function isPrime(num) { 
 //    if (num <= 1) return false; 
- 
+
 //    for (let i = 2; i <= Math.sqrt(num); i++) { 
 //      if (num % i === 0) return false; 
 //    } 
- 
+
 //    return true; 
 //  }
- 
- // Test the function with a range of numbers
+
+// Test the function with a range of numbers
 
 //  function testPrimes() {
 //    const numbersToTest = [0, 1, 2, 3, 4, 5, 10, 13, 17, 18, 19, 20];
@@ -73,7 +73,7 @@
 //      console.log(`Is ${num} a prime number? ${isPrime(num)}`);
 //    });
 //  }
- 
+
 //  testPrimes();
 
 /// question 6 
@@ -150,7 +150,7 @@
 // var nextListItem = function() {
 //     var item = list.pop();
 //     if (item) {
-    
+
 //         console.log("Processing item:", item);
 //         nextListItem();
 
@@ -167,9 +167,9 @@
 // // Example usage:
 // console.log(fibonacci(6));
 
- // Output: 8
+// Output: 8
 
- ///question 11
+///question 11
 
 //  function findSingleNumber(nums) {
 //    let result = 0;
@@ -182,7 +182,7 @@
 // console.log(findSingleNumber([2, 2, 1]));  
 // console.log(findSingleNumber([4, 1, 2, 1, 2]));  
 
- // Output: 1
+// Output: 1
 // Output: 4
 
 ///question 12
@@ -238,8 +238,8 @@
 //    uniqueArr.sort((a, b) => b - a); 
 //    return uniqueArr[1]; 
 //  }
- 
- ///question 17
+
+///question 17
 
 //  [0, 1, 1, 2, 3, 5, 8, 13]
 
@@ -273,36 +273,36 @@
 // function largestDifference(arr) { 
 
 //    let min = arr[0]; 
- 
+
 //    let maxDiff = 0; 
- 
+
 //    for (let i = 1; i < arr.length; i++) { 
- 
+
 //      if (arr[i] < min) { 
- 
+
 //        min = arr[i]; 
- 
+
 //      }
- 
+
 //  else { 
- 
+
 //        const diff = arr[i] – min; 
- 
+
 //        if (diff > maxDiff) { 
- 
+
 //          maxDiff = diff; 
- 
+
 //        } 
- 
+
 //      } 
- 
+
 //    } 
- 
+
 //    return maxDiff; 
- 
+
 //  } 
 
- 
+
 ///question 20
 
 // function flattenArray(arr) {
@@ -321,9 +321,9 @@
 
 
 ///question 21
-  
+
 // function countCharacterOccurrences(str) {
- 
+
 //   const charCount = {};
 //   for (let char of str) {
 //     charCount[char] = (charCount[char] || 0) + 1;
@@ -456,11 +456,11 @@
 ///question 28
 
 // function isPalindrome(str) {
- 
+
 //   const cleanedStr = str.replace(/[^\w]/g, "").toLowerCase();
-  
+
 //   const reversedStr = cleanedStr.split("").reverse().join("");
-  
+
 //   return cleanedStr === reversedStr;
 // }
 // console.log(isPalindrome("A man, a plan, a canal, Panama"));  
@@ -488,7 +488,7 @@
 //   for (let j = 0; j < n - i; j++) {
 //     string += " ";
 //   }
-  
+
 //   for (let k = 0; k < i; k++) {
 //     string += "*";
 //   }
@@ -515,14 +515,30 @@
 
 ///question 32
 
-let n = 5; 
-let string = "";
+// let n = 5; 
+// let string = "";
 
-for(let i = 0; i < n; i++) { 
-  for(let j = 0; j < n; j++) {
-    string += "*";
+// for(let i = 0; i < n; i++) { 
+//   for(let j = 0; j < n; j++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+///question 33
+
+let n=5;
+ let String= "";
+
+ for(let i=1; i<=n; i++){
+  for(let j=0; j<i; j++){
+    // String +="";
+    for(let k=0; k<i;k++){
+      String +='*';
+    }
   }
-  string += "\n";
-}
-console.log(string);
-
+ 
+  String +='\n';
+ }
+console.log(String)
