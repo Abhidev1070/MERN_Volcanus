@@ -528,17 +528,36 @@
 
 ///question 33
 
-let n=5;
- let String= "";
+// let n=5;
+//  let String= "";
 
- for(let i=1; i<=n; i++){
-  for(let j=0; j<i; j++){
-    // String +="";
-    for(let k=0; k<i;k++){
-      String +='*';
-    }
-  }
+//  for(let i=1; i<=n; i++){
+//   for(let j=0; j<i; j++){
+//     // String +="";
+//     for(let k=0; k<i;k++){
+//       String +='*';
+//     }
+//   }
  
-  String +='\n';
- }
-console.log(String)
+//   String +='\n';
+//  }
+// console.log(String)
+
+
+
+
+function factorial(number) { 
+
+  if (number === 0 || number === 1) { 
+
+    return 1; 
+
+  } else { 
+
+    return number * factorial(number - 1); 
+
+  } 
+
+} 
+console.log(factorial(2));
+
