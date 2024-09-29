@@ -544,20 +544,38 @@
 // console.log(String)
 
 
+///question 34
+
+// function factorial(number) { 
+
+//   if (number === 0 || number === 1) { 
+
+//     return 1; 
+
+//   } else { 
+
+//     return number * factorial(number - 1); 
+
+//   } 
+
+// } 
+// console.log(factorial(2));
 
 
-function factorial(number) { 
+///question 34
 
-  if (number === 0 || number === 1) { 
-
-    return 1; 
-
-  } else { 
-
-    return number * factorial(number - 1); 
-
-  } 
-
-} 
-console.log(factorial(2));
-
+  let n=10;  
+    
+  for(let i=n;i>=1;i--)  
+  {  
+      for(let j=1;j<=i-1;j++)  
+     
+          String+=" *";  
+       
+      // for(let k=1;k<=n;k++)  
+      
+      //     String+="*";  
+      
+      String+="\n";  
+  }  
+ console.log(String);  
