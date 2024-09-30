@@ -564,18 +564,38 @@
 
 ///question 34
 
-  let n=10;  
+//   let n=10;  
     
-  for(let i=n;i>=1;i--)  
-  {  
-      for(let j=1;j<=i-1;j++)  
+//   for(let i=n;i>=1;i--)  
+//   {  
+//       for(let j=1;j<=i-1;j++)  
      
-          String+=" *";  
+//           String+=" *";  
        
-      // for(let k=1;k<=n;k++)  
+  //    // for(let k=1;k<=n;k++)  
       
-      //     String+="*";  
+  //    //     String+="*";  
       
-      String+="\n";  
-  }  
- console.log(String);  
+//       String+="\n";  
+//   }  
+//  console.log(String);  
+
+
+///question 35
+
+
+let n = 7;
+let output = ""; 
+
+for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+        if (i == Math.floor(n / 2) || j == Math.floor(n / 2)) {
+            output += "*"; 
+        } else {
+            output += " ";
+        }
+    }
+    output += "\n"; 
+}
+
+console.log(output); 
