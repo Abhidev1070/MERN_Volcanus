@@ -584,11 +584,30 @@
 ///question 35
 
 
+// let n = 7;
+// let output = ""; 
+
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//         if (i == Math.floor(n / 2) || j == Math.floor(n / 2)) {
+//             output += "*"; 
+//         } else {
+//             output += " ";
+//         }
+//     }
+//     output += "\n"; 
+// }
+
+// console.log(output); 
+
+///question 36
+
+
 let n = 7;
 let output = ""; 
 
 for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
+    for (let j = 0; j < n-i; j++) {
         if (i == Math.floor(n / 2) || j == Math.floor(n / 2)) {
             output += "*"; 
         } else {
@@ -598,4 +617,4 @@ for (let i = 0; i < n; i++) {
     output += "\n"; 
 }
 
-console.log(output); 
+console.log(output);
