@@ -650,15 +650,24 @@
 
 
 ///question 38
-let i =10;
-pattern = "";
-for (let n = 0; n <= i; n++) {
-  for (let num = i; num <i+n; num++) {
-     pattern += "*";
+// let i =10;
+// pattern = "";
+// for (let n = 0; n <= i; n++) {
+//   for (let num = i; num <i+n; num++) {
+//      pattern += "*";
     
     
-  }
-  pattern += "\n";
-}
-console.log(pattern);
+//   }
+//   pattern += "\n";
+// }
+// console.log(pattern);
 
+///question 39
+
+let obj = {
+	a: "hello world",
+	b: 42
+};
+let b = "a";
+console.log(obj[b]);
+console.log(obj["b"]);
