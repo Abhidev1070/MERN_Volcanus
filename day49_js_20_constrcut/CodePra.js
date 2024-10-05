@@ -664,10 +664,33 @@
 
 ///question 39
 
-let obj = {
-	a: "hello world",
-	b: 42
-};
-let b = "a";
-console.log(obj[b]);
-console.log(obj["b"]);
+// let obj = {
+// 	a: "hello world",
+// 	b: 42
+// };
+// let b = "a";
+// console.log(obj[b]);
+// console.log(obj["b"]);
+
+
+
+///question 40
+
+// Global variable
+let globalVar = "I'm a global variable";
+
+function myFunction() {
+    
+    let localVar = "I'm a local variable";
+    let globalVar = "I'm a shadowed global variable";
+
+    console.log(localVar);
+    console.log(globalVar); 
+}
+
+myFunction();
+
+console.log(globalVar); 
+
+// console.log(localVar); 
+
